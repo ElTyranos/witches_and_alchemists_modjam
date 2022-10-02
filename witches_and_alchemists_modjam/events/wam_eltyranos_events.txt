@@ -21,6 +21,10 @@ wam_eltyranos.0001 = { # Someone spotted a witch
 	
 	trigger = {
 		basic_is_valid_for_yearly_events_trigger = yes
+		faith = { NOT = { has_doctrine = doctrine_witchcraft_accepted } }
+		capital_province = {
+			geographical_region = world_europe
+		}
 	}
 	
 	weight_multiplier = {
@@ -51,7 +55,7 @@ wam_eltyranos.0001 = { # Someone spotted a witch
 	
 	option = { # Hunt for the witch
 		name = wam_eltyranos.0001.a
-		debug_log = "WAM_Debug: a ruler hunted for a witch in wam_eltyranos.0001"
+		# debug_log = "WAM_Debug: a ruler hunted for a witch in wam_eltyranos.0001"
 		trigger_event = {
 			id = wam_eltyranos.0002
 			days = 2
@@ -88,7 +92,7 @@ wam_eltyranos.0001 = { # Someone spotted a witch
 	}
 	option = { # Give up
 		name = wam_eltyranos.0001.b
-		debug_log = "WAM_Debug: a ruler left a witch alive in wam_eltyranos.0001"
+		# debug_log = "WAM_Debug: a ruler left a witch alive in wam_eltyranos.0001"
 		if = {
 			limit = { exists = scope:court_chaplain }
 			scope:court_chaplain = {
@@ -99,7 +103,10 @@ wam_eltyranos.0001 = { # Someone spotted a witch
 				}
 			}
 		}
-		stress_impact = { zealous = medium_stress_gain }
+		stress_impact = { 
+			zealous = medium_stress_gain
+			zealous = minor_stress_loss
+		}
 		hidden_effect = {
 			scope:witch = {
 				death = { death_reason = death_vanished	}
@@ -142,7 +149,7 @@ wam_eltyranos.0002 = { # Decide on the fate of the witch
 	
 	option = { # Burn her
 		name = wam_eltyranos.0002.a
-		debug_log = "WAM_Debug: a ruler burned a witch in wam_eltyranos.0002"
+		# debug_log = "WAM_Debug: a ruler burned a witch in wam_eltyranos.0002"
 		
 		if = {
 			limit = { exists = scope:court_chaplain }
@@ -150,16 +157,20 @@ wam_eltyranos.0002 = { # Decide on the fate of the witch
 				add_opinion = {
 					target = root
 					modifier = pious_opinion
-					opinion = 5
+					opinion = 10
 				}
 			}
 		}
 		
 		scope:witch = {
-			death = { death_reason = death_burned	}
+			death = { death_reason = death_burned }
 		}
 		
-		stress_impact = { cynical = minor_stress_gain }
+		stress_impact = {
+			compassionate = medium_stress_impact_gain			
+			just = minor_stress_gain
+			sadistic = medium_stress_impact_loss
+		}
 		
 		ai_chance = {
 			base = 50
@@ -178,19 +189,25 @@ wam_eltyranos.0002 = { # Decide on the fate of the witch
 	}
 	option = { # Don't burn her
 		name = wam_eltyranos.0002.b
-		debug_log = "WAM_Debug: a ruler left a witch alive in wam_eltyranos.0001"
+		# debug_log = "WAM_Debug: a ruler left a witch alive in wam_eltyranos.0001"
 		custom_tooltip = wam_eltyranos.0002.b.tt
+		
 		if = {
 			limit = { exists = scope:court_chaplain }
 			scope:court_chaplain = {
 				add_opinion = {
 					target = root
 					modifier = pious_opinion
-					opinion = -5
+					opinion = -10
 				}
 			}
 		}
-		stress_impact = { zealous = medium_stress_gain }
+		
+		stress_impact = { 
+			zealous = medium_stress_gain
+			trusting = minor_stress_impact_loss
+		}
+		
 		ai_chance = {
 			base = 50
 			ai_value_modifier = {
