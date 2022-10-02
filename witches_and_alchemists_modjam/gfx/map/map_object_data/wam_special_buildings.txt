@@ -1,0 +1,10 @@
+﻿object={
+	name="Tower of Wisdom"
+	clamp_to_water_level=no
+	render_under_water=yes
+	generated_content=no
+	layer="building_layer"
+	pdxmesh="special_building_tower_of_wisdom_mesh"
+	count=1
+	transform="3351.776123 0.000000 1471.618286 0.000000 -0.350117 0.000000 0.936706 1.000000 1.000000 1.000000
+"}
