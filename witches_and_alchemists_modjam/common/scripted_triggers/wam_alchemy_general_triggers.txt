@@ -43,7 +43,7 @@ wam_province_has_ingredient_trigger = {
 
 
 wam_is_alchemist_trigger = {
-	always = yes
+	has_trait = alchemist
 }
 
 ingredient_is_unknown_trigger = {

@@ -143,7 +143,7 @@ wam_province_has_cinnabar_trigger = {
 		geographical_region = world_steppe_west
 		geographical_region = world_tibet
 		geographical_region = world_burma
-		# Additonal sources:
+		# Additional sources:
 		geographical_region = world_europe_west_iberia
 		geographical_region = world_africa_north_east
 	}
@@ -200,16 +200,9 @@ wam_province_has_bay_leaf_trigger = {
 }
 
 ### RECIPES ###
-wam_has_right_input_for_philosophers_stone_trigger = {
-	wam_has_ingredient_selected_trigger = { INGREDIENT = realgar }
+wam_has_right_input_for_elixir_of_life_trigger = {
 	wam_has_ingredient_selected_trigger = { INGREDIENT = mercury }
-	wam_has_ingredient_selected_trigger = { INGREDIENT = lead }
+	wam_has_ingredient_selected_trigger = { INGREDIENT = vitriol }
+	wam_has_ingredient_selected_trigger = { INGREDIENT = small_mammal }
 	wam_has_treatment_selected_trigger = { TREATMENT = boiling }
-}
-
-wam_has_right_input_for_panacea_trigger = {
-	wam_has_ingredient_selected_trigger = { INGREDIENT = realgar }
-	wam_has_ingredient_selected_trigger = { INGREDIENT = mercury }
-	wam_has_ingredient_selected_trigger = { INGREDIENT = sulphur }
-	wam_has_treatment_selected_trigger = { TREATMENT = grinding }
 }

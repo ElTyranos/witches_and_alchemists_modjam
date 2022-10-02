@@ -10,8 +10,7 @@ wam_dummy.1 = {
 		var:wam_selected_treatment = flag:grinding
 		var:wam_selected_treatment = flag:dissolving
 		var:wam_selected_treatment = flag:baking
-		var:wam_selected_treatment = flag:philosophers_stone
-		var:wam_selected_treatment = flag:panacea
+		var:wam_selected_treatment = flag:elixir_of_life
 		exists = var:outcome_artifact
 		exists = var:wam_poses_list
 	}

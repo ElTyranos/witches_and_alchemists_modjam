@@ -20,5 +20,6 @@ wam_1_on_action = {
 		100 = 0
 		# average weight should be 13.5%
 		5 = wam_eltyranos.0001 # Someone spotted a witch
+		5 = wam_alchemy.1
 	}
 }

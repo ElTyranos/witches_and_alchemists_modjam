@@ -63,10 +63,7 @@
  wam_ingr_charcoal_desc:0 "The product of slowly partially burning wood; used as a fuel or for various medicinal purposes."
  wam_ingr_bay_leaf_desc:0 "An herb that makes strong flavours milder, and as it does with high temperaments."
 
- wam_recipe_philosophers_stone_desc:0 "Realgar, Mercury, Lead, when Boiled, yields the Philosopher's Stone"
- wam_recipe_panacea_desc:0 "Realgar, Mercury, Sulphur, when Ground, yields the Panacea"
-
-
+ wam_recipe_elixir_of_life_desc:0 "Mercury, Vitriol, and a Small Mammal, when Boiled together, yields the Elixir of Life"
 
 
 
