@@ -53,22 +53,22 @@ wam_ingredient_is_rare_trigger = {
 }
 
 #These are called from any_realm_province and as such are scoped to provicnes; can reference terrain type, location, etc.
-wam_realm_has_mercury_trigger = { always = no }
-wam_realm_has_realgar_trigger = { always = no }
-wam_realm_has_sulphur_trigger = { always = no }
-wam_realm_has_lead_trigger = { always = no }
-wam_realm_has_tin_trigger = { always = no }
-wam_realm_has_vinegar_trigger = { always = no }
-wam_realm_has_cinnabar_trigger = { always = no }
-wam_realm_has_aqua_vitae_trigger = { always = no }
-wam_realm_has_vitriol_trigger = { always = no }
-wam_realm_has_large_mammal_trigger = { always = no }
-wam_realm_has_medium_mammal_trigger = { always = no }
-wam_realm_has_small_mammal_trigger = { always = no }
-wam_realm_has_poultry_trigger = { always = no }
-wam_realm_has_saltpeter_trigger = { always = no }
-wam_realm_has_charcoal_trigger = { always = no }
-wam_realm_has_bay_leaf_trigger = { always = no }
+wam_province_has_mercury_trigger = { always = no }
+wam_province_has_realgar_trigger = { always = no }
+wam_province_has_sulphur_trigger = { always = no }
+wam_province_has_lead_trigger = { always = no }
+wam_province_has_tin_trigger = { always = no }
+wam_province_has_vinegar_trigger = { always = no }
+wam_province_has_cinnabar_trigger = { always = no }
+wam_province_has_aqua_vitae_trigger = { always = no }
+wam_province_has_vitriol_trigger = { always = no }
+wam_province_has_large_mammal_trigger = { always = no }
+wam_province_has_medium_mammal_trigger = { always = no }
+wam_province_has_small_mammal_trigger = { always = no }
+wam_province_has_poultry_trigger = { always = no }
+wam_province_has_saltpeter_trigger = { always = no }
+wam_province_has_charcoal_trigger = { always = no }
+wam_province_has_bay_leaf_trigger = { always = no }
 
 ### RECIPES ###
 wam_has_right_input_for_philosophers_stone_trigger = {
