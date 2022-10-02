@@ -238,7 +238,7 @@ city_01 = {
 			"building_celtic_city_02_mesh"
 			"building_celtic_tribal_mesh"
 		}
-		illustration = @western_city
+		illustration = @holding_illustration_western
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city" soundparameter = { "Tier" = 0 } }
 		graphical_cultures = { celtic_building_gfx }
 	}
@@ -576,7 +576,7 @@ city_02 = {
 		names = {
 			"building_celtic_city_01_mesh"
 		}
-		illustration = @western_city
+		illustration = @holding_illustration_western
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city" soundparameter = { "Tier" = 1 } }
 		graphical_cultures = { celtic_building_gfx }
 	}
@@ -881,7 +881,7 @@ city_03 = {
 		names = {
 			"building_celtic_city_02_mesh"
 		}
-		illustration = @western_city
+		illustration = @holding_illustration_western
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city" soundparameter = { "Tier" = 2} }
 		graphical_cultures = { celtic_building_gfx }
 	}
@@ -1185,7 +1185,7 @@ city_04 = {
 		names = {
 			"building_celtic_city_02_mesh"
 		}
-		illustration = @western_city
+		illustration = @holding_illustration_western
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city" soundparameter = { "Tier" = 2 } }
 		graphical_cultures = { celtic_building_gfx }
 	}

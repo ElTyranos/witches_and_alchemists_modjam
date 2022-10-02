@@ -1,0 +1,29 @@
+pdxmesh = {
+	name = "special_building_celtic_wizards_tower_mesh"
+	file = "special_building_celtic_wizards_tower.mesh"
+
+	meshsettings = {
+		name = "celtic_wizards_tower"
+		index = 0
+		texture_diffuse = "building_celtic_01_diffuse.dds"
+		texture_normal = "building_celtic_01_normal.dds"
+		texture_specular = "building_celtic_01_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal_temple"
+		index = 0
+		texture_diffuse = "building_celtic_decal_01_diffuse.dds"
+		texture_normal = "building_celtic_decal_01_normal.dds"
+		texture_specular = "building_celtic_decal_01_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+
+entity = {
+	name = "special_building_celtic_wizards_tower_entity"
+	pdxmesh = "special_building_celtic_wizards_tower_mesh"
+}

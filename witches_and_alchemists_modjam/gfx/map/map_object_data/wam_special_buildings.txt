@@ -8,3 +8,13 @@
 	count=1
 	transform="3351.776123 0.000000 1471.618286 0.000000 -0.350117 0.000000 0.936706 1.000000 1.000000 1.000000
 "}
+object={
+	name="Wizard Tower"
+	clamp_to_water_level=no
+	render_under_water=yes
+	generated_content=no
+	layer="building_layer"
+	pdxmesh="special_building_celtic_wizards_tower_mesh"
+	count=1
+	transform="736.336792 0.000000 2943.461182 0.000000 0.485187 0.000000 0.874411 0.668322 0.668322 0.668322
+"}
