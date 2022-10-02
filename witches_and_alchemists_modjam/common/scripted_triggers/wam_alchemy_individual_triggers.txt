@@ -6,7 +6,6 @@ wam_trigger_for_scoped_ingredient = {
 		flag:realgar = { $TRIGGER$ = { INGREDIENT = realgar } }
 		flag:sulphur = { $TRIGGER$ = { INGREDIENT = sulphur } }
 		flag:lead = { $TRIGGER$ = { INGREDIENT = lead } }
-		
 		flag:tin = { $TRIGGER$ = { INGREDIENT = tin } }
 		flag:vinegar = { $TRIGGER$ = { INGREDIENT = vinegar } }
 		flag:cinnabar = { $TRIGGER$ = { INGREDIENT = cinnabar } }
@@ -19,6 +18,27 @@ wam_trigger_for_scoped_ingredient = {
 		flag:saltpeter = { $TRIGGER$ = { INGREDIENT = saltpeter } }
 		flag:charcoal = { $TRIGGER$ = { INGREDIENT = charcoal } }
 		flag:bay_leaf = { $TRIGGER$ = { INGREDIENT = bay_leaf } }
+	}
+}
+
+wam_trigger_for_any_ingredient = {
+	OR = {
+		$TRIGGER$ = { INGREDIENT = realgar }
+		$TRIGGER$ = { INGREDIENT = sulphur }
+		$TRIGGER$ = { INGREDIENT = cinnabar }
+		$TRIGGER$ = { INGREDIENT = medium_mammal }
+		$TRIGGER$ = { INGREDIENT = poultry }
+		$TRIGGER$ = { INGREDIENT = charcoal }
+		$TRIGGER$ = { INGREDIENT = mercury }
+		$TRIGGER$ = { INGREDIENT = aqua_vitae }
+		$TRIGGER$ = { INGREDIENT = vitriol }
+		$TRIGGER$ = { INGREDIENT = large_mammal }
+		$TRIGGER$ = { INGREDIENT = saltpeter }
+		$TRIGGER$ = { INGREDIENT = lead }
+		$TRIGGER$ = { INGREDIENT = tin }
+		$TRIGGER$ = { INGREDIENT = vinegar }
+		$TRIGGER$ = { INGREDIENT = small_mammal }
+		$TRIGGER$ = { INGREDIENT = bay_leaf }
 	}
 }
 

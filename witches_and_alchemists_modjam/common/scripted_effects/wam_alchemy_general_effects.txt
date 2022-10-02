@@ -1,5 +1,4 @@
-﻿#Placeholders:
-wam_setup_ingredient_default_vars_effect = {
+﻿wam_setup_ingredient_default_vars_effect = {
 	if = {
 		limit = { NOT = { exists = var:wam_is_known_ingr_$INGREDIENT$ } }
 		if = {
@@ -13,7 +12,15 @@ wam_setup_ingredient_default_vars_effect = {
 	}
 	if = {
 		limit = { NOT = { exists = var:wam_amount_owned_ingr_$INGREDIENT$ } }
-		set_variable = { name = wam_amount_owned_ingr_$INGREDIENT$ value = { integer_range = { min = 1 max = 10 } } }
+		if = {
+			limit = { wam_ingredient_is_ubiquitous_trigger = { INGREDIENT = $INGREDIENT$ } }
+			set_variable = { name = wam_amount_owned_ingr_$INGREDIENT$ value = { integer_range = { min = 5 max = 10 } } }
+		} else_if = {
+			limit = { wam_ingredient_is_common_trigger = { INGREDIENT = $INGREDIENT$ } }
+			set_variable = { name = wam_amount_owned_ingr_$INGREDIENT$ value = { integer_range = { min = 1 max = 5 } } }
+		} else = {
+			set_variable = { name = wam_amount_owned_ingr_$INGREDIENT$ value = { integer_range = { min = 0 max = 2 } } }
+		}
 	}
 }
 
@@ -26,8 +33,8 @@ wam_setup_treatment_default_vars_effect = {
 
 wam_setup_recipe_default_vars_effect = {
 	if = {
-		limit = { NOT = { exists = var:wam_is_known_recipe_$INGREDIENT$ } }
-		set_variable = { name = wam_is_known_recipe_$TREATMENT$ value = no }
+		limit = { NOT = { exists = var:wam_is_known_recipe_$RECIPE$ } }
+		set_variable = { name = wam_is_known_recipe_$RECIPE$ value = no }
 	}
 }
 
@@ -135,6 +142,17 @@ wam_add_ingredient_effect = {
 	}
 }
 
+wam_learn_ingredient_effect = {
+	wam_find_or_create_alchemy_story_effect = yes
+	scope:story = {
+		set_variable = {
+			name = wam_is_known_ingr_$INGREDIENT$
+			value = yes
+		}
+	}
+	custom_tooltip = wam_learn_ingredient_tt
+}
+
 wam_deselect_ingredients_no_longer_owned_effect = {
 	wam_execute_effect_for_every_ingredient = { EFFECT = wam_deselect_ingredient_if_no_longer_owned_effect }
 }
@@ -188,7 +206,7 @@ wam_set_price_for_detail_view_ingredient_effect = {
 				limit = {
 					wam_trigger_for_scoped_ingredient = { SCOPED_INGREDIENT = scope:ingredient TRIGGER = wam_ingredient_is_ubiquitous_trigger }
 				}
-				divide = 2
+				divide = 4
 			}
 			if = {
 				limit = {
@@ -196,6 +214,21 @@ wam_set_price_for_detail_view_ingredient_effect = {
 				}
 				divide = 2
 			}
+		}
+	}
+}
+
+move_unknown_ingredient_to_list_effect = {
+	if = {
+		limit = {
+			var:wam_is_known_ingr_$INGREDIENT$ = no
+		}
+		save_scope_value_as = {
+			name = ingr_$INGREDIENT$
+			value = flag:$INGREDIENT$
+		}
+		scope:ingr_$INGREDIENT$ = {
+			add_to_list = unknown_ingredients
 		}
 	}
 }

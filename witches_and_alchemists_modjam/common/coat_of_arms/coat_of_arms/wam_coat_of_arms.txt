@@ -1,0 +1,20 @@
+﻿c_kufa = {
+	pattern = "pattern_solid.dds"
+    color1 = "green"
+    colored_emblem = {
+		texture = "ce_paly_undy.dds"
+		color1 = "white"
+		color2 = "green"
+	}
+}
+
+k_ynys_dywyll = {
+	pattern = "pattern_solid.dds"
+    color1 = "black"
+    colored_emblem = {
+		texture = "ce_wyvern_rising.dds"
+		color1 = "yellow"
+		color2 = "white"
+		instance={ scale={ 0.9 0.9 } }
+	}
+}

@@ -3,6 +3,7 @@ wam_middle_east_01 = {
 	name = "Jabir"
 	religion = "ismaili"
 	culture = "persian"
+	dynasty = 101727
 	trait = jabir_ibn_hayyan
 	trait = education_learning_4
 	trait = intellect_good_2
