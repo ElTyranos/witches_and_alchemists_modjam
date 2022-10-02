@@ -71,11 +71,22 @@ wam_jabir_ibn_hayyan_other_study_decision = {
 	is_shown = {
 		NOT = { has_trait = jabir_ibn_hayyan } 
 		is_landed = yes
+		OR = {
+			learning >= 10
+			has_trait = scholar
+			has_trait = education_learning_3
+			has_trait = education_learning_4
+		}
 	}
 	
-	#is_valid = {
-	#	has_trait = jabir_ibn_hayyan
-	#}
+	is_valid = {
+		OR = {
+			learning >= 10
+			has_trait = scholar
+			has_trait = education_learning_3
+			has_trait = education_learning_4
+		}
+	}
 	
 	is_valid_showing_failures_only = {
 		is_available_adult = yes

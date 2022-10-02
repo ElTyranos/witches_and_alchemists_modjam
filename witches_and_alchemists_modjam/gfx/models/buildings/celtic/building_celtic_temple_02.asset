@@ -1,7 +1,7 @@
 pdxmesh = {
 	name = "building_celtic_temple_02_mesh"
 	file = "building_celtic_temple_02.mesh"
-	scale = 0.6
+	scale = 0.7
 
 	meshsettings = {
 		name = "celtic_temple_02"

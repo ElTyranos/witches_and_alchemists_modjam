@@ -1,23 +1,61 @@
-﻿# on_game_start = {
-# 	on_actions = {
-# 		wam_setup_on_actions
-# 	}
-# }
+﻿on_game_start = {
+	on_actions = {
+		wam_setup_on_actions
+	}
+}
 
-# wam_setup_on_actions = {
-# 	effect = {
-# 		title:c_baghdad.holder = {
-# 			create_character = {
-# 				location = title:c_baghdad.holder.location
-# 				template = pool_repopulate_spouse
-# 				save_temporary_scope_as = jabir
-# 			}
-# 			scope:jabir = {
-# 				add_to_global_variable_list = {
-# 					name = wam_jabir_ibn_hayyan_list # Dunno how else to do this
-# 					target = this
-# 				}
-# 			}
-# 		}
-# 	}
-# }
+wam_setup_on_actions = {
+	effect = {
+		character:wam_middle_east_01 = {
+			copy_inheritable_appearance_from = character:wam_middle_east_02
+		}
+		character:wam_middle_east_02 = { make_unprunable = yes }
+		character:wam_middle_east_03 = { make_unprunable = yes }
+		character:wam_middle_east_04 = { make_unprunable = yes }
+	}
+}
+on_game_start_after_lobby = {
+	on_actions = {
+		wam_setup_on_actions_after_lobby
+	}
+}
+
+wam_setup_on_actions_after_lobby = {
+	effect = {
+		if = {
+			limit = {
+				character:wam_middle_east_01 = {
+					is_ai = no
+				}
+			}
+			character:wam_middle_east_01 = {
+				trigger_event = jabir_ibn_hayyan.0010
+			}
+		}
+		else = {
+			random_list = {
+				1 = {
+					character:wam_middle_east_01 = {
+						add_character_modifier = {
+							modifier = wam_jabir_origin_story_circe
+						}
+					}					
+				}
+				1 = {
+					character:wam_middle_east_01 = {
+						add_character_modifier = {
+							modifier = wam_jabir_origin_story_harun
+						}
+					}					
+				}
+				1 = {
+					character:wam_middle_east_01 = {
+						add_character_modifier = {
+							modifier = wam_jabir_origin_story_imhotep
+						}
+					}					
+				}
+			}
+		}
+	}
+}

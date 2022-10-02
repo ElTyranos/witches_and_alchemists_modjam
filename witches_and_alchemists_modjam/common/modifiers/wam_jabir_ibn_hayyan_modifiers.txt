@@ -134,7 +134,7 @@ wam_studying_jabiran_corpus_strategems = {
 }
 
 wam_studying_jabiran_corpus_astronomy = {
-	icon = magic_positive
+	icon = learning_positive
 	stewardship = 2
 	monthly_stewardship_lifestyle_xp_gain_mult = 0.05
 }
@@ -149,4 +149,26 @@ wam_studying_jabiran_corpus_religion = {
 	icon = piety_positive
 	learning = 2
 	monthly_learning_lifestyle_xp_gain_mult = 0.05
+}
+
+wam_jabir_origin_story_circe = {
+	icon = magic_positive
+	diplomacy = 1
+	fertility = 0.1
+	monthly_piety = 0.2
+}
+
+wam_jabir_origin_story_harun = {
+	icon = magic_positive
+	intrigue = 1
+	learning = 1
+	monthly_piety = 0.1
+	monthly_prestige = 0.1
+}
+
+wam_jabir_origin_story_imhotep = {
+	icon = magic_positive
+	martial = 1
+	stewardship = 1
+	monthly_prestige = 0.2
 }
