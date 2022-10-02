@@ -23,3 +23,19 @@
 	icon = jabir_ibn_hayyan.dds
 
 }
+
+druid = {
+	#Druids are wise
+	learning = 2
+	#Druids are well regarded
+	courtier_and_guest_opinion = 10
+	#TODO: Enables journey to sacred grove
+	
+	
+	shown_in_ruler_designer = no
+
+	desc = trait_druid_desc
+
+	icon = druid.dds
+
+}
