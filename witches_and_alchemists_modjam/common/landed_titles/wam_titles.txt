@@ -5,7 +5,7 @@
 	capital = c_anglesey
 
 	ai_primary_priority = {
-		add = @always_primary_score
+		add = 1000
 	}
 
 	destroy_if_invalid_heir = yes

@@ -22,17 +22,17 @@ wam_has_treatment_selected_trigger = {
 
 wam_find_alchemy_story_trigger = {
 	trigger_if = {
-		limit = { NOT = { exists = scope:story } }
+		limit = { NOT = { exists = scope:alchemy_story } }
 		any_owned_story = {
 			story_type = wam_alchemic_knowledge_story
-			save_temporary_scope_as = story
+			save_temporary_scope_as = alchemy_story
 		}
 	}
 }
 
 wam_owns_ingredient_trigger = {
 	wam_find_alchemy_story_trigger = yes
-	scope:story = {
+	scope:alchemy_story = {
 		var:wam_amount_owned_ingr_$INGREDIENT$ > 0
 	}
 }

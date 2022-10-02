@@ -57,14 +57,6 @@ wam_close_alchemy_window_sgui = {
 			limit = { exists = var:outcome_artifact }
 			remove_variable = outcome_artifact
 		}
-
-		
-		random_owned_story = {
-			limit = {
-				story_type = wam_alchemic_knowledge_story
-			}
-			end_story = yes
-		}
 	}
 }
 

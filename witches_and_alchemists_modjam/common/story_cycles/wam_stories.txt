@@ -7,7 +7,7 @@
 		wam_execute_effect_for_every_recipe = { EFFECT = wam_setup_recipe_default_vars_effect }
 	}
 
-	on_owner_death = { #Script to 
+	on_owner_death = {
 		if = {
 			limit = {
 				story_owner = {
@@ -20,7 +20,6 @@
 						owns_story_of_type = wam_alchemic_knowledge_story
 					}
 				}
-				#TODO: merge alchemy knowledge/ingredients
 			} else = {
 				story_owner.player_heir = {
 					save_temporary_scope_as = new_owner
@@ -58,36 +57,4 @@
 			effect = { end_story = yes }
 		}
 	}
-
-	# effect_group = { #Trigger the events
-	# 	years = 1
-
-	# 	triggered_effect = {
-	# 		trigger = { 
-	# 			OR = {
-	# 				exists = var:lang_1
-	# 				exists = var:lang_2
-	# 				exists = var:lang_3
-	# 			}
-	# 		}
-	# 		effect = {
-	# 			story_owner = {
-	# 				if = {
-	# 					limit = { age = 6 }
-	# 					trigger_event = {
-	# 						id = multie.1
-	# 						days = { 0 30 }
-	# 					}
-	# 				}
-	# 				every_courtier = {
-	# 					limit = { age = 6 }
-	# 					trigger_event = {
-	# 						id = multie.1
-	# 						days = { 0 30 }
-	# 					}
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# }
 }

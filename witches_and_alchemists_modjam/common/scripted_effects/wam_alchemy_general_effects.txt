@@ -42,19 +42,17 @@ wam_setup_recipe_default_vars_effect = {
 #General:
 wam_find_or_create_alchemy_story_effect = {
 	if = {
-		limit = { NOT = { exists = scope:story } }
+		limit = { NOT = { exists = scope:alchemy_story } }
 		
 		random_owned_story = {
-			limit = {
-				story_type = wam_alchemic_knowledge_story
-			}
-			save_scope_as = story
+			limit = { story_type = wam_alchemic_knowledge_story }
+			save_scope_as = alchemy_story
 		}
 		if = {
-			limit = { not = { exists = scope:story } }
+			limit = { not = { exists = scope:alchemy_story } }
 			create_story = {
 				type = wam_alchemic_knowledge_story
-				save_scope_as = story
+				save_scope_as = alchemy_story
 			}
 		}
 	}
@@ -63,7 +61,7 @@ wam_find_or_create_alchemy_story_effect = {
 wam_move_alchemy_story_to_vars_effect = {
 	wam_find_or_create_alchemy_story_effect = yes
 		
-	scope:story = {
+	scope:alchemy_story = {
 		wam_execute_effect_for_every_ingredient = { EFFECT = wam_move_ingredient_from_story_to_char_effect }
 		wam_execute_effect_for_every_treatment = { EFFECT = wam_move_treatment_from_story_to_char_effect }
 		wam_execute_effect_for_every_recipe = { EFFECT = wam_move_recipe_from_story_to_char_effect }
@@ -124,7 +122,7 @@ wam_reorder_selected_ingredients_effect = {
 
 wam_remove_ingredient_effect = {
 	wam_find_or_create_alchemy_story_effect = yes
-	scope:story = {
+	scope:alchemy_story = {
 		change_variable = {
 			name = wam_amount_owned_ingr_$INGREDIENT$
 			subtract = 1
@@ -134,7 +132,7 @@ wam_remove_ingredient_effect = {
 
 wam_add_ingredient_effect = {
 	wam_find_or_create_alchemy_story_effect = yes
-	scope:story = {
+	scope:alchemy_story = {
 		change_variable = {
 			name = wam_amount_owned_ingr_$INGREDIENT$
 			add = 1
@@ -144,7 +142,7 @@ wam_add_ingredient_effect = {
 
 wam_learn_ingredient_effect = {
 	wam_find_or_create_alchemy_story_effect = yes
-	scope:story = {
+	scope:alchemy_story = {
 		set_variable = {
 			name = wam_is_known_ingr_$INGREDIENT$
 			value = yes
@@ -275,7 +273,7 @@ wam_move_recipe_from_story_to_char_effect = {
 }
 
 wam_learn_recipe_effect = {
-	scope:story = {
+	scope:alchemy_story = {
 		set_variable = {
 			name = wam_is_known_recipe_$RECIPE$
 			value = yes
