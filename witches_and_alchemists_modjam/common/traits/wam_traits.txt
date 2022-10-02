@@ -1,6 +1,4 @@
-﻿
-
-jabir_ibn_hayyan = {	
+﻿jabir_ibn_hayyan = {	
 	
 	monthly_lifestyle_xp_gain_mult = 0.05
 	health = 0.3
