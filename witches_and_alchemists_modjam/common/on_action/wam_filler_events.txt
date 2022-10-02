@@ -1,0 +1,11 @@
+﻿random_yearly_playable_pulse = {
+    random_events = {
+        900 = 0
+        
+		100 = wam_modjam_events.0001 #A friend takes interest #Erendriel
+		100 = wam_modjam_events.0003 #A desperate proposal #Erendriel
+		100 = wam_modjam_events.0004 #Surprise surprise! #Erendriel
+		100 = wam_modjam_events.0005 #It just works! #Erendriel
+		100 = wam_modjam_events.0009 #Behind Closed Doors #Erendriel
+    }
+}

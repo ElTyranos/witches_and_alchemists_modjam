@@ -25,3 +25,18 @@ jabir_ibn_hayyan = {
 	icon = jabir_ibn_hayyan.dds
 
 }
+
+immortal = {	
+	
+	monthly_lifestyle_xp_gain_mult = 0.05
+	health = 3
+
+	immortal = yes
+	
+	shown_in_ruler_designer = no
+
+	desc = immortal_trait_desc
+
+	icon = jabir_ibn_hayyan_alt.dds
+
+}
