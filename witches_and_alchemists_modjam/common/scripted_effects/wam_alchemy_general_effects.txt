@@ -184,7 +184,7 @@ wam_set_price_for_detail_view_ingredient_effect = {
 			value = 150
 			if = {
 				limit = {
-					primary_title = { wam_trigger_for_scoped_ingredient = { SCOPED_INGREDIENT = scope:ingredient TRIGGER = wam_realm_has_ingredient_trigger } }
+					any_realm_province = { wam_trigger_for_scoped_ingredient = { SCOPED_INGREDIENT = scope:ingredient TRIGGER = wam_realm_has_ingredient_trigger } }
 				}
 				divide = 2
 			}

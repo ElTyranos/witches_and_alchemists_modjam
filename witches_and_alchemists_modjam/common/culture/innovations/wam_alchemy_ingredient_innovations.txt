@@ -1,19 +1,36 @@
 ﻿#Invisible pseudo-innovations are the only way to dynamically get textures from gui based on scope flag names.
 #Credit to (who else but) Tobbzn for finding out.
 
-wam_ingr_mercury = {
-	group = culture_group_military culture_era = culture_era_tribal potential = { always = no }
-	icon = "gfx/interface/icons/alchemy_ingredients/wam_ingr_mercury.dds"
-}
-wam_ingr_sulphur = {
-	group = culture_group_military culture_era = culture_era_tribal potential = { always = no }
-	icon = "gfx/interface/icons/alchemy_ingredients/wam_ingr_sulphur.dds"
-}
-wam_ingr_lead = {
-	group = culture_group_military culture_era = culture_era_tribal potential = { always = no }
-	icon = "gfx/interface/icons/alchemy_ingredients/wam_ingr_lead.dds"
-}
-wam_ingr_realgar = {
-	group = culture_group_military culture_era = culture_era_tribal potential = { always = no }
-	icon = "gfx/interface/icons/alchemy_ingredients/wam_ingr_realgar.dds"
-}
+wam_ingr_mercury = { group = culture_group_military culture_era = culture_era_tribal potential = { always = no } icon = "gfx/interface/icons/alchemy_ingredients/wam_ingr_mercury.dds" }
+wam_ingr_realgar = { group = culture_group_military culture_era = culture_era_tribal potential = { always = no } icon = "gfx/interface/icons/alchemy_ingredients/wam_ingr_realgar.dds" }
+wam_ingr_sulphur = { group = culture_group_military culture_era = culture_era_tribal potential = { always = no } icon = "gfx/interface/icons/alchemy_ingredients/wam_ingr_sulphur.dds" }
+wam_ingr_lead = { group = culture_group_military culture_era = culture_era_tribal potential = { always = no } icon = "gfx/interface/icons/alchemy_ingredients/wam_ingr_lead.dds" }
+wam_ingr_tin = { group = culture_group_military culture_era = culture_era_tribal potential = { always = no } icon = "gfx/interface/icons/alchemy_ingredients/wam_ingr_tin.dds" }
+wam_ingr_vinegar = { group = culture_group_military culture_era = culture_era_tribal potential = { always = no } icon = "gfx/interface/icons/alchemy_ingredients/wam_ingr_vinegar.dds" }
+wam_ingr_cinnabar = { group = culture_group_military culture_era = culture_era_tribal potential = { always = no } icon = "gfx/interface/icons/alchemy_ingredients/wam_ingr_cinnabar.dds" }
+wam_ingr_aqua_vitae = { group = culture_group_military culture_era = culture_era_tribal potential = { always = no } icon = "gfx/interface/icons/alchemy_ingredients/wam_ingr_aqua_vitae.dds" }
+wam_ingr_vitriol = { group = culture_group_military culture_era = culture_era_tribal potential = { always = no } icon = "gfx/interface/icons/alchemy_ingredients/wam_ingr_vitriol.dds" }
+wam_ingr_large_mammal = { group = culture_group_military culture_era = culture_era_tribal potential = { always = no } icon = "gfx/interface/icons/alchemy_ingredients/wam_ingr_large_mammal.dds" }
+wam_ingr_medium_mammal = { group = culture_group_military culture_era = culture_era_tribal potential = { always = no } icon = "gfx/interface/icons/alchemy_ingredients/wam_ingr_medium_mammal.dds" }
+wam_ingr_small_mammal = { group = culture_group_military culture_era = culture_era_tribal potential = { always = no } icon = "gfx/interface/icons/alchemy_ingredients/wam_ingr_small_mammal.dds" }
+wam_ingr_poultry = { group = culture_group_military culture_era = culture_era_tribal potential = { always = no } icon = "gfx/interface/icons/alchemy_ingredients/wam_ingr_poultry.dds" }
+wam_ingr_saltpeter = { group = culture_group_military culture_era = culture_era_tribal potential = { always = no } icon = "gfx/interface/icons/alchemy_ingredients/wam_ingr_saltpeter.dds" }
+wam_ingr_charcoal = { group = culture_group_military culture_era = culture_era_tribal potential = { always = no } icon = "gfx/interface/icons/alchemy_ingredients/wam_ingr_charcoal.dds" }
+wam_ingr_bay_leaf = { group = culture_group_military culture_era = culture_era_tribal potential = { always = no } icon = "gfx/interface/icons/alchemy_ingredients/wam_ingr_bay_leaf.dds" }
+
+# mercury
+# realgar
+# sulphur
+# lead
+# tin
+# vinegar
+# cinnabar
+# aqua_vitae
+# vitriol
+# large_mammal
+# medium_mammal
+# small_mammal
+# poultry
+# saltpeter
+# charcoal
+# bay_leaf

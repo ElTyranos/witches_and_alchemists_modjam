@@ -52,7 +52,7 @@
 			allow_outside = yes
 
 			background = {
-				texture = "gfx/interface/illustrations/event_scenes/study_physician.dds"
+				texture = "gfx/interface/illustrations/wam_forest_night.dds"
 				fittype = centercrop
 				alpha = 0.6
 				margin_top = 10
@@ -73,7 +73,7 @@
 				using = portrait_base
 				alwaystransparent = yes
 				tooltip_enabled = no
-				portrait_texture = "[Character.GetAnimatedPortrait('environment_body', 'camera_wam_alchemist', 'steward', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
+				portrait_texture = "[Character.GetAnimatedPortrait('wam_forest_alchemy_environment', 'camera_wam_alchemist', 'wam_cauldron', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
 				mask = "gfx/portraits/portrait_mask_blank.dds"
 				effectname = "NoHighlight"
 			}
