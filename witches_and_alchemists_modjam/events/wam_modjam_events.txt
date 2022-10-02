@@ -1,3 +1,5 @@
+﻿namespace = wam_modjam_events
+
 ##########################################
 # A friend takes interest
 ##########################################
@@ -778,9 +780,8 @@ wam_modjam_events.0009 = { # Your zealous wife has finally found proof of your s
 		random_list = {
 			50 = {
 				death = { 
-						killer = root.primary_spouse
-						death_reason = death_murder
-					}
+					killer = root.primary_spouse
+					death_reason = death_murder
 				}
 			}
 			50 = {
