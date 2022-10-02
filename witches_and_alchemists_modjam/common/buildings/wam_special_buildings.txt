@@ -1,0 +1,37 @@
+﻿tower_of_wisdom = {
+
+#	asset = {
+#		type = pdxmesh
+#		name = "special_building_tower_of_wisdom_mesh"
+#	}
+
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_grand_library_of_baghdad.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_battlements
+		}
+	}
+	
+	cost_gold = 1000
+
+	character_modifier = {
+		learning_per_piety_level = 2
+		monthly_lifestyle_xp_gain_mult = 0.1
+		dread_gain_mult = 0.1
+	}
+	county_modifier = {
+		development_growth_factor = 0.1
+		county_opinion_add = 5
+	}
+	
+	ai_value = { base = 1 }
+	
+	type = special
+}
