@@ -2,18 +2,19 @@
 wam_setup_ingredient_default_vars_effect = {
 	if = {
 		limit = { NOT = { exists = var:wam_is_known_ingr_$INGREDIENT$ } }
-		set_variable = { name = wam_is_known_ingr_$INGREDIENT$ value = yes }
+		if = {
+			limit = {
+				story_owner = { any_realm_province = { wam_trigger_for_scoped_ingredient = { SCOPED_INGREDIENT = flag:$INGREDIENT$ TRIGGER = wam_province_has_ingredient_trigger } } }
+			}
+			set_variable = { name = wam_is_known_ingr_$INGREDIENT$ value = yes }
+		} else = {
+			set_variable = { name = wam_is_known_ingr_$INGREDIENT$ value = no }
+		}
 	}
 	if = {
 		limit = { NOT = { exists = var:wam_amount_owned_ingr_$INGREDIENT$ } }
 		set_variable = { name = wam_amount_owned_ingr_$INGREDIENT$ value = { integer_range = { min = 1 max = 10 } } }
 	}
-	# random_independent_ruler = {
-	# 	primary_title = {
-	# 		save_scope_as = rand_title
-	# 	}
-	# }
-	#set_variable = { name = wam_import_location_ingr_$INGREDIENT$ value = scope:rand_title }
 }
 
 wam_setup_treatment_default_vars_effect = {
@@ -72,10 +73,6 @@ wam_ingredient_remove_vars_effect = {
 		limit = { exists = var:wam_amount_owned_ingr_$INGREDIENT$ }
 		remove_variable = wam_amount_owned_ingr_$INGREDIENT$
 	}
-	# if = {
-	# 	limit = { exists = var:wam_import_location_ingr_$INGREDIENT$ }
-	# 	remove_variable = wam_import_location_ingr_$INGREDIENT$
-	# }
 }
 
 wam_move_ingredient_from_story_to_char_effect = {
@@ -87,7 +84,6 @@ wam_move_ingredient_from_story_to_char_effect = {
 			save_scope_value_as = { name = wam_ingr_$INGREDIENT$ value = flag:$INGREDIENT$ }
 			add_to_variable_list = { name = wam_ingredients target = scope:wam_ingr_$INGREDIENT$ }
 			set_variable = { name = wam_amount_owned_ingr_$INGREDIENT$ value = PREV.var:wam_amount_owned_ingr_$INGREDIENT$ }
-			#set_variable = { name = wam_import_location_ingr_$INGREDIENT$ value = PREV.var:wam_import_location_ingr_$INGREDIENT$ }
 		}
 	}
 }
@@ -184,7 +180,7 @@ wam_set_price_for_detail_view_ingredient_effect = {
 			value = 150
 			if = {
 				limit = {
-					primary_title = { wam_trigger_for_scoped_ingredient = { SCOPED_INGREDIENT = scope:ingredient TRIGGER = wam_realm_has_ingredient_trigger } }
+					any_realm_province = { wam_trigger_for_scoped_ingredient = { SCOPED_INGREDIENT = scope:ingredient TRIGGER = wam_province_has_ingredient_trigger } }
 				}
 				divide = 2
 			}

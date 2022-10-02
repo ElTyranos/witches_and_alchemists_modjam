@@ -7,6 +7,20 @@ wam_execute_effect_for_every_ingredient = {
 	$EFFECT$ = { INGREDIENT = realgar }
 	$EFFECT$ = { INGREDIENT = sulphur }
 	$EFFECT$ = { INGREDIENT = lead }
+
+	$EFFECT$ = { INGREDIENT = tin }
+	$EFFECT$ = { INGREDIENT = vinegar }
+	$EFFECT$ = { INGREDIENT = cinnabar }
+	$EFFECT$ = { INGREDIENT = aqua_vitae }
+	$EFFECT$ = { INGREDIENT = vitriol }
+	$EFFECT$ = { INGREDIENT = large_mammal }
+	$EFFECT$ = { INGREDIENT = medium_mammal }
+	$EFFECT$ = { INGREDIENT = small_mammal }
+	$EFFECT$ = { INGREDIENT = poultry }
+	$EFFECT$ = { INGREDIENT = saltpeter }
+	$EFFECT$ = { INGREDIENT = charcoal }
+	$EFFECT$ = { INGREDIENT = bay_leaf }
+
 }
 
 wam_execute_effect_for_scoped_ingredient_effect = {
@@ -16,6 +30,19 @@ wam_execute_effect_for_scoped_ingredient_effect = {
 		flag:realgar = { $EFFECT$ = { INGREDIENT = realgar } }
 		flag:sulphur = { $EFFECT$ = { INGREDIENT = sulphur } }
 		flag:lead = { $EFFECT$ = { INGREDIENT = lead } }
+		
+		flag:tin = { $EFFECT$ = { INGREDIENT = tin } }
+		flag:vinegar = { $EFFECT$ = { INGREDIENT = vinegar } }
+		flag:cinnabar = { $EFFECT$ = { INGREDIENT = cinnabar } }
+		flag:aqua_vitae = { $EFFECT$ = { INGREDIENT = aqua_vitae } }
+		flag:vitriol = { $EFFECT$ = { INGREDIENT = vitriol } }
+		flag:large_mammal = { $EFFECT$ = { INGREDIENT = large_mammal } }
+		flag:medium_mammal = { $EFFECT$ = { INGREDIENT = medium_mammal } }
+		flag:small_mammal = { $EFFECT$ = { INGREDIENT = small_mammal } }
+		flag:poultry = { $EFFECT$ = { INGREDIENT = poultry } }
+		flag:saltpeter = { $EFFECT$ = { INGREDIENT = saltpeter } }
+		flag:charcoal = { $EFFECT$ = { INGREDIENT = charcoal } }
+		flag:bay_leaf = { $EFFECT$ = { INGREDIENT = bay_leaf } }
 	}
 }
 

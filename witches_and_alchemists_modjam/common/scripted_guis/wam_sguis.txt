@@ -147,15 +147,6 @@ wam_select_ingredient_for_detail_view_sgui = {
 			name = wam_selected_detail_view_ingredient
 			value = scope:ingredient
 		}
-		# random_independent_ruler = {
-		# 	primary_title = {
-		# 		save_scope_as = rand_title
-		# 	}
-		# }
-		# set_variable = {
-		# 	name = wam_selected_detail_view_ingredient_import_location 
-		# 	value = scope:rand_title
-		# }
 
 		wam_set_price_for_detail_view_ingredient_effect = yes
 	}
