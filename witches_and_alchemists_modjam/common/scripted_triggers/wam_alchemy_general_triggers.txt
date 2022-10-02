@@ -34,6 +34,6 @@ wam_owns_ingredient_trigger = {
 	}
 }
 
-wam_realm_has_ingredient_trigger = {
-	wam_realm_has_$INGREDIENT$_trigger = yes
+wam_province_has_ingredient_trigger = {
+	wam_province_has_$INGREDIENT$_trigger = yes
 }
