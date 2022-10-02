@@ -23,23 +23,10 @@
  wam_ingredient_detail_window_amount_owned:0 "In storage: #EMP [GetPlayer.MakeScope.Var(Concatenate('wam_amount_owned_ingr_',Scope.GetFlagName)).GetValue]#!"
 
  wam_ingredient_import_btn:0 "Purchase for [GetPlayer.MakeScope.Var('wam_selected_detail_view_ingredient_cost').GetValue|V0] [gold_i]"
-#  wam_ingredient_gather_local:0 "Gather in [GetPlayer.MakeScope.Var('wam_selected_detail_view_ingredient_import_location').Title.GetNameNoTierNoTooltip] for [GetPlayer.MakeScope.Var('wam_selected_detail_view_ingredient_cost').GetValue|V0] [gold_i]"
-#  wam_ingredient_import_ally:0 "Import from [GetPlayer.MakeScope.Var('wam_selected_detail_view_ingredient_import_location').Title.GetNameNoTierNoTooltip] #P (ally)#! for [GetPlayer.MakeScope.Var('wam_selected_detail_view_ingredient_cost').GetValue|V0] [gold_i]"
-#  wam_ingredient_import_non_ally:0 "Import from [GetPlayer.MakeScope.Var('wam_selected_detail_view_ingredient_import_location').Title.GetNameNoTierNoTooltip] for [GetPlayer.MakeScope.Var('wam_selected_detail_view_ingredient_cost').GetValue|V0] [gold_i]"
 
-#  wam_ingredient_origin_desc:0 "This ingredient is rumoured to come from Transoxiania... Finding allies in that direction may cheapen the price."
 
  wam_recipes_window_title:0 "Known Recipes"
  wam_recipes_window_desc:0 "Recipes are primarily learned by experimenting, but other alchemists may also have advice."
-
-#  wam_ingr_sulphur_name:0 "Sulphur"
-#  wam_ingr_sulphur_desc:0 "Eww, that smell..."
-#  wam_ingr_realgar_name:0 "Realgar"
-#  wam_ingr_realgar_desc:0 "Not to be confused with Fakegar."
-#  wam_ingr_lead_name:0 "Lead"
-#  wam_ingr_lead_desc:0 "This is supposed to become gold, eventually..."
-#  wam_ingr_mercury_name:0 "Mercury"
-#  wam_ingr_mercury_desc:0 "A liquid metal, defying all known about things that are shiny."
 
  wam_ingr_mercury_name:0 "Mercury"
  wam_ingr_realgar_name:0 "Realgar"

@@ -554,27 +554,6 @@
 					onclick = "[GetScriptedGui('wam_buy_ingredient_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 					clicksound = "event:/SFX/UI/Unique/CharacterLifestyle/sfx_ui_unique_lifestyle_stewardship"
 				}
-				# Commented out pending a real import system
-				# coa_title_small = {
-				# 	position = { -10 15 }
-				# 	parentanchor = top|right
-				# 	blockoverride "coa_tooltip" { }
-				# 	datacontext = "[GetPlayer.MakeScope.Var('wam_selected_detail_view_ingredient_import_location').Title]"
-				# }
-
-				
-				# text_multi = {
-				# 	parentanchor = top|hcenter
-				# 	position = { 0 75 }
-				# 	size = { 430 70 }
-				# 	default_format = "#EMP"
-				# 	margin_top = 10
-				# 	margin_left = 10
-				# 	margin_right = 10
-				# 	margin_bottom = 10
-				# 	align = center
-				# 	text = "wam_ingredient_origin_desc"
-				# }
 			}
 		}
 	}
