@@ -1,7 +1,10 @@
 ﻿wam_portrait_is_witch_trigger = {
 	AND = {
 		is_landed = no
-		has_trait = witch
+		OR = {
+			has_trait = witch
+			has_trait = druid
+		}
 	}
 	trigger_if = {
 		limit = { exists = capital_province }
