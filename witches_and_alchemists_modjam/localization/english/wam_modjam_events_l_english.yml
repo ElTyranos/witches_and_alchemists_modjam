@@ -87,5 +87,5 @@
  
  #Alchemist trait
  
- trait_alchemist:0 "Immortal"
+ trait_alchemist:0 "Alchemist"
  alchemist_trait_desc:0 "This character has acquired knowledge in the brewing of unfusions, potions and elixirs of otherworldly nature."
