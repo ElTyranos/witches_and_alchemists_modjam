@@ -1,0 +1,41 @@
+﻿bm_867_wam = {
+	start_date = 867.1.1
+	is_playable = yes
+	recommended = yes
+	default = yes
+
+	#Jabir
+	character = {
+		name = "bookmark_wam_jabir_ibn_hayyan"
+		dynasty = 101727
+		dynasty_splendor_level = 1
+		type = male
+		birth = 828.1.1
+		title = d_basra
+		government = clan_government
+		culture = persian
+		religion = ismaili
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = wam_middle_east_01
+		position = { 1050 800 }
+		animation = disapproval
+	}
+
+	# Taliesin
+	character = {
+		name = "bookmark_wam_taliesin"
+		dynasty = 101920
+		dynasty_splendor_level = 1
+		type = male
+		birth = 806.4.18
+		title = k_ynys_dywyll
+		government = feudal_government
+		culture = welsh
+		religion = pagan
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = wam_british_isles_01
+		position = { 300 500 }
+		animation = personality_bold
+	}
+
+}
