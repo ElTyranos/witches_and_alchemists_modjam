@@ -46,6 +46,17 @@
 			}
 		}
 	}
+		
+	wam_broom_prop = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = props
+				template = wam_broom
+				value = 1.0
+			}
+		}
+	}
 	
 	##
 

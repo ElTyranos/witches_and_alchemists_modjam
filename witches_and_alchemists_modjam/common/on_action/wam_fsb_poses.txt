@@ -12,6 +12,7 @@ cfp = {
 			wam_add_pose_to_list = { list = wam pose = wam_potion }
 			wam_add_pose_to_list = { list = wam pose = wam_grenade }
 			wam_add_pose_to_list = { list = wam pose = wam_bonfire }
+			wam_add_pose_to_list = { list = wam pose = wam_broom }
 		}
 	}
 }

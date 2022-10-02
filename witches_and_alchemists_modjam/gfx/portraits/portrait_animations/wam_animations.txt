@@ -627,3 +627,218 @@ wam_bonfire = {
 	female = male
 	girl = male	
 }
+
+wam_broom = {
+	male = { 
+		default = { head = "throneRoom_oneHandedPassive1_entry" torso = "throneRoom_oneHandedPassive1_entry" } 
+
+		throneRoom_one_handed_passive_1_hunchbacked = {
+			animation = { head = "throneRoom_oneHandedPassive1_entry" torso = "throneRoom_oneHandedPassive1_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 110
+					has_trait = hunchbacked
+				}
+			}
+			portrait_modifier = {
+				animations_props = wam_broom_prop
+				animations = council_marshal_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_infant = {
+			animation = { head = "idle_entry" torso = "idle_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					age <= 1
+				}
+			}
+		}
+
+		throneRoom_one_handed_passive_1_child_1 = {
+			animation = { head = "idle_entry" torso = "idle_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					age <= 4
+
+				}
+			}
+		}
+
+		throneRoom_one_handed_passive_1_child_2 = {
+			animation = { head = "idle_entry" torso = "idle_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					age <= 10
+
+				}
+			}
+		}
+
+		throneRoom_one_handed_passive_1_basic = {
+			animation = { head = "throneRoom_oneHandedPassive1_entry" torso = "throneRoom_oneHandedPassive1_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 40
+						NOT = { has_trait = dwarf }
+						NOT = { has_trait = pregnant }					
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = wam_broom_prop
+				animations = council_marshal_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_fat = {
+			animation = { head = "throneRoom_oneHandedPassive1_entry" torso = "throneRoom_oneHandedPassiveFat1_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 40
+						NOT = { has_trait = dwarf }
+						NOT = { has_trait = pregnant }		
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = wam_broom_prop
+				animations = council_marshal_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_dwarf = {
+			animation = { head = "throneRoom_oneHandedPassive1_entry" torso = "throneRoom_oneHandedPassiveFat1_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 50
+						has_trait = dwarf
+						NOT = { has_trait = pregnant }						
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = wam_broom_prop
+				animations = council_marshal_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_fat_dwarf = {
+			animation = { head = "throneRoom_oneHandedPassive1_entry" torso = "throneRoom_oneHandedPassiveFatDwarf1_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 50
+						has_trait = dwarf
+						NOT = { has_trait = pregnant }						
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = wam_broom_prop
+				animations = council_marshal_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant = {
+			animation = { head = "throneRoom_oneHandedPassive1_entry" torso = "throneRoom_oneHandedPassiveFatDwarf1_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 45
+						has_trait = pregnant
+						NOT = { has_trait = dwarf }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = wam_broom_prop
+				animations = council_marshal_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant_dwarf = {
+			animation = { head = "throneRoom_oneHandedPassive1_entry" torso = "throneRoom_oneHandedPassiveFatDwarf1_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 60
+						has_trait = pregnant
+						has_trait = dwarf
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = wam_broom_prop
+				animations = council_marshal_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant_fat_dwarf = {
+			animation = { head = "throneRoom_oneHandedPassive1_entry" torso = "throneRoom_oneHandedPassiveFatDwarf1_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 60
+						has_trait = pregnant
+						has_trait = dwarf
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = wam_broom_prop
+				animations = council_marshal_decal
+			}
+		}
+	}
+
+	female = male
+	girl = male
+	boy = male
+}

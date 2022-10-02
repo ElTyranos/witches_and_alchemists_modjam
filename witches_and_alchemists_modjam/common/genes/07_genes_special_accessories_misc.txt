@@ -815,6 +815,18 @@ special_genes = {
 				girl = female
 			}
 			
+			wam_broom = {
+				index = 66
+				male = {
+					1 = wam_broom_01
+				}
+				female = {
+					1 = wam_broom_01
+				}
+				boy = male
+				girl = female
+			}
+			
 		}
 		
 
