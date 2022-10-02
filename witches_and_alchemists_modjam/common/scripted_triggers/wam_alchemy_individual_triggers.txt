@@ -53,22 +53,131 @@ wam_ingredient_is_rare_trigger = {
 }
 
 #These are called from any_realm_province and as such are scoped to provicnes; can reference terrain type, location, etc.
-wam_province_has_mercury_trigger = { always = no }
-wam_province_has_realgar_trigger = { always = no }
-wam_province_has_sulphur_trigger = { always = no }
-wam_province_has_lead_trigger = { always = no }
-wam_province_has_tin_trigger = { always = no }
-wam_province_has_vinegar_trigger = { always = no }
-wam_province_has_cinnabar_trigger = { always = no }
-wam_province_has_aqua_vitae_trigger = { always = no }
-wam_province_has_vitriol_trigger = { always = no }
-wam_province_has_large_mammal_trigger = { always = no }
-wam_province_has_medium_mammal_trigger = { always = no }
-wam_province_has_small_mammal_trigger = { always = no }
-wam_province_has_poultry_trigger = { always = no }
-wam_province_has_saltpeter_trigger = { always = no }
-wam_province_has_charcoal_trigger = { always = no }
-wam_province_has_bay_leaf_trigger = { always = no }
+wam_province_has_mercury_trigger = {
+	# Found everywhere.
+	always = yes
+}
+wam_province_has_realgar_trigger = {
+	# Volcanic active areas, hotsprings.
+	# Matt note: restrict it further than sulphur?
+	OR = {
+		geographical_region = world_europe_south
+		geographical_region = world_asia_minor
+		geographical_region = world_middle_east
+		geographical_region = world_india_deccan
+		geographical_region = world_india_bengal
+		geographical_region = world_africa_north
+		geographical_region = world_steppe_tarim
+		geographical_region = world_steppe_west
+		geographical_region = world_tibet
+		geographical_region = world_burma
+	}
+}
+wam_province_has_sulphur_trigger = {
+	# Volcanic active areas, hotsprings.
+	OR = {
+		geographical_region = world_europe_south
+		geographical_region = world_asia_minor
+		geographical_region = world_middle_east
+		geographical_region = world_india_deccan
+		geographical_region = world_india_bengal
+		geographical_region = world_africa_north
+		geographical_region = world_steppe_tarim
+		geographical_region = world_steppe_west
+		geographical_region = world_tibet
+		geographical_region = world_burma
+	}
+}
+wam_province_has_lead_trigger = {
+	OR = {
+		geographical_region = world_europe_west_britannia
+		geographical_region = world_europe_east
+		geographical_region = world_steppe_west
+		geographical_region = world_europe_west_iberia
+	}
+}
+wam_province_has_tin_trigger = {
+	OR = {
+		geographical_region = world_europe_west_britannia
+		geographical_region = world_europe_west_iberia
+		geographical_region = ghw_region_balkans
+		geographical_region = dlc_fp1_region_western_adventure_targets_northern_france_brittany #"Brittany"
+		geographical_region = world_asia_minor
+		geographical_region = world_steppe_east
+	}
+}
+wam_province_has_vinegar_trigger = {
+	always = yes
+}
+wam_province_has_cinnabar_trigger = {
+	# Volcanic active areas, hotsprings.
+	# Matt note: restrict it further than sulphur?
+	OR = {
+		geographical_region = world_europe_south
+		geographical_region = world_asia_minor
+		geographical_region = world_middle_east
+		geographical_region = world_india_deccan
+		geographical_region = world_india_bengal
+		geographical_region = world_africa_north
+		geographical_region = world_steppe_tarim
+		geographical_region = world_steppe_west
+		geographical_region = world_tibet
+		geographical_region = world_burma
+		# Additonal sources:
+		geographical_region = world_europe_west_iberia
+		geographical_region = world_africa_north_east
+	}
+}
+wam_province_has_aqua_vitae_trigger = {
+	# Byproduct of wine.
+	always = yes
+}
+wam_province_has_vitriol_trigger = {
+	# Volcanic active areas, hotsprings.
+	# Matt note: restrict it further than sulphur?
+	OR = {
+		geographical_region = world_europe_south
+		geographical_region = world_asia_minor
+		geographical_region = world_middle_east
+		geographical_region = world_india_deccan
+		geographical_region = world_india_bengal
+		geographical_region = world_africa_north
+		geographical_region = world_steppe_tarim
+		geographical_region = world_steppe_west
+		geographical_region = world_tibet
+		geographical_region = world_burma
+	}
+}
+wam_province_has_large_mammal_trigger = {
+	always = yes
+}
+wam_province_has_medium_mammal_trigger = {
+	always = yes
+}
+wam_province_has_small_mammal_trigger = {
+	always = yes
+}
+wam_province_has_poultry_trigger = {
+	always = yes
+}
+wam_province_has_saltpeter_trigger = {
+	OR = {
+		geographical_region = world_europe
+		geographical_region = world_steppe_west
+		geographical_region = world_india
+	}
+}
+wam_province_has_charcoal_trigger = {
+	OR = {
+		terrain = forest
+		terrain = taiga
+		terrain = wetlands
+	}
+}
+wam_province_has_bay_leaf_trigger = {
+	# Found everywhere?
+	always = yes
+}
 
 ### RECIPES ###
 wam_has_right_input_for_philosophers_stone_trigger = {
