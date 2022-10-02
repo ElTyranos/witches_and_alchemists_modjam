@@ -1,4 +1,14 @@
 ﻿object={
+	name="Byzantine Alchemist Tower"
+	clamp_to_water_level=no
+	render_under_water=yes
+	generated_content=no
+	layer="building_layer"
+	pdxmesh="byzantine_countryside_temple_mesh"
+	count=1
+	transform="2578.749756 0.000000 1974.002075 0.000000 0.881260 0.000000 0.472632 0.794336 0.794336 0.794336
+"}
+object={
 	name="Tower of Wisdom"
 	clamp_to_water_level=no
 	render_under_water=yes
