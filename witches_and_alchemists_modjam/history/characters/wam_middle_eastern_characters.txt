@@ -3,11 +3,10 @@ wam_middle_east_01 = {
 	name = "Jabir"
 	religion = "ismaili"
 	culture = "persian"
-	learning = 12
 	trait = jabir_ibn_hayyan
 	trait = education_learning_4
 	trait = intellect_good_2
-	trait = scholar
+	#trait = scholar
 	trait = calm
 	trait = diligent
 	trait = content
@@ -16,6 +15,66 @@ wam_middle_east_01 = {
 		set_immortal_age = 25
 	}
 	1888.8.8 = {
+		death = yes
+	}
+}
+
+# The old Jabir
+wam_middle_east_02 = {
+	name = "Jabir"
+	religion = "ismaili"
+	culture = "persian"
+	trait = education_learning_4
+	trait = intellect_good_2
+	#trait = scholar
+	trait = calm
+	trait = diligent
+	trait = content
+	trait = ill
+	721.8.8 = {
+		birth = yes
+	}
+	809.8.8 = {
+		death = yes
+	}
+}
+
+# Circe
+wam_middle_east_03 = {
+	name = "Circe"
+	female = yes
+	religion = "hellenic_pagan"
+	culture = "greek"
+	trait = education_learning_4
+	trait = intellect_good_3
+	trait = beauty_good_3
+	trait = calm
+	trait = diligent
+	trait = content
+	777.7.7 = {
+		birth = yes
+	}
+	809.8.8 = {
+		death = {
+			death_reason = death_vanished
+		}
+	}
+}
+
+# Djoser
+wam_middle_east_04 = {
+	name = "Djoser"
+	religion = "kushitism_pagan"
+	culture = "egyptian"
+	trait = shrewd
+	trait = ambitious
+	trait = just
+	trait = diligent
+	trait = patient
+	-2708.8.8 = {
+		birth = yes
+	}
+	-2648.8.8 = {
 		death = yes
 	}
 }

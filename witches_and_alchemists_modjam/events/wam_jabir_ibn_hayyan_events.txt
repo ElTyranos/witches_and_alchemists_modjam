@@ -14,7 +14,7 @@ jabir_ibn_hayyan.0001 = {
 	
 	right_portrait = { 	
 		character = root
-		animation = personality_rational
+		animation = wam_potion
 	}
 
 	option = { # Alchemy
@@ -115,7 +115,7 @@ jabir_ibn_hayyan.0002 = {
 	}
 	right_portrait = { 	
 		character = scope:jabir
-		animation = personality_content
+		animation = wam_potion
 	}
 
 	immediate = {
@@ -375,7 +375,7 @@ jabir_ibn_hayyan.0005 = {
 	}
 	right_portrait = { 	
 		character = scope:jabir
-		animation = personality_content
+		animation = wam_potion
 	}
 
 	option = { # Learn it
@@ -458,4 +458,234 @@ jabir_ibn_hayyan.0005 = {
 			remove_variable = wam_jabir_corpus_type
 		}
 	}
+}
+
+
+# Jabir ibn Hayyan Immortal Event Chain
+
+
+# Start the event chain
+jabir_ibn_hayyan.0010 = {
+	type = character_event
+	title = jabir_ibn_hayyan.0010.t
+	desc = jabir_ibn_hayyan.0010.desc
+	theme = learning
+	
+	# left_portrait = { 	
+	# 	character = root
+	# 	animation = chancellor
+	# }
+
+	immediate = {
+		save_scope_as = jabir
+		title:c_tus = {
+			save_scope_as = tus
+		}
+		title:c_baghdad = {
+			save_scope_as = baghdad
+		}
+	}
+
+	option = { # Learn it
+		name = jabir_ibn_hayyan.0010.a
+		trigger_event = jabir_ibn_hayyan.0011
+	}
+}
+
+# Remembering your past
+jabir_ibn_hayyan.0011 = {
+	type = character_event
+	title = jabir_ibn_hayyan.0011.t
+	desc = jabir_ibn_hayyan.0011.desc
+	theme = death
+	override_background = { event_background = bedchamber }
+	
+	right_portrait = { 	
+		character = character:wam_middle_east_02
+		animation = sick
+	}
+
+	option = { # Circe
+		name = jabir_ibn_hayyan.0011.a
+		set_variable = {
+			name = wam_jabir_origin_story
+			value = flag:circe
+		}
+		trigger_event = jabir_ibn_hayyan.0012
+	}
+
+	option = { # Harun
+		name = jabir_ibn_hayyan.0011.b
+		set_variable = {
+			name = wam_jabir_origin_story
+			value = flag:harun
+		}
+		trigger_event = jabir_ibn_hayyan.0013
+	}
+
+	option = { # Imhotep
+		name = jabir_ibn_hayyan.0011.c
+		set_variable = {
+			name = wam_jabir_origin_story
+			value = flag:imhotep
+		}
+		trigger_event = jabir_ibn_hayyan.0014
+	}
+
+}
+
+# How you became immortal - Circe version
+jabir_ibn_hayyan.0012 = {
+	type = character_event
+	title = jabir_ibn_hayyan.0012.t
+	desc = jabir_ibn_hayyan.0012.desc
+	theme = medicine
+	override_background = {
+		event_background = bedchamber
+	}
+
+	left_portrait = {
+		character = character:wam_middle_east_03
+		animation = wam_potion
+	}
+	right_portrait = { 	
+		character = character:wam_middle_east_02
+		animation = sick
+	}
+
+	option = {
+		name = jabir_ibn_hayyan.0012.a
+		trigger_event = jabir_ibn_hayyan.0015
+	}
+
+}
+
+# How you became immortal - Harun version
+jabir_ibn_hayyan.0013 = {
+	type = character_event
+	title = jabir_ibn_hayyan.0013.t
+	desc = jabir_ibn_hayyan.0013.desc
+	theme = medicine
+	override_background = {
+		event_background = wam_corridor_night
+	}
+
+	left_portrait = {
+		character = character:34005
+		animation = personality_content
+	}
+	right_portrait = { 	
+		character = character:wam_middle_east_02
+		animation = grief
+	}
+
+	option = {
+		name = jabir_ibn_hayyan.0012.a
+		trigger_event = jabir_ibn_hayyan.0015
+	}
+
+}
+
+# How you became immortal - Imhotep version
+jabir_ibn_hayyan.0014 = {
+	type = character_event
+	title = jabir_ibn_hayyan.0014.t
+	desc = jabir_ibn_hayyan.0014.desc
+	theme = medicine
+	override_background = {
+		event_background = wilderness_desert
+	}
+
+	left_portrait = {
+		character = character:wam_middle_east_04
+		animation = personality_zealous
+	}
+	right_portrait = { 	
+		character = character:wam_middle_east_02
+		animation = throne_room_bow_1
+	}
+
+	option = {
+		name = jabir_ibn_hayyan.0012.a
+		trigger_event = jabir_ibn_hayyan.0015
+	}
+
+}
+
+# You are immortal - now what?
+jabir_ibn_hayyan.0015 = {
+	type = character_event
+	title = jabir_ibn_hayyan.0015.t
+	desc = {
+		desc = jabir_ibn_hayyan.0015.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					var:wam_jabir_origin_story = flag:circe
+				}
+				desc = jabir_ibn_hayyan.0015.desc.circe
+			}
+			triggered_desc = {
+				trigger = {
+					var:wam_jabir_origin_story = flag:harun
+				}
+				desc = jabir_ibn_hayyan.0015.desc.harun
+			}
+			triggered_desc = {
+				trigger = {
+					var:wam_jabir_origin_story = flag:imhotep
+				}
+				desc = jabir_ibn_hayyan.0015.desc.imhotep
+			}
+		}
+	}
+	theme = medicine
+	override_background = { event_background = wam_mena_garden }
+	
+	right_portrait = { 	
+		character = root
+		animation = wam_potion
+	}
+
+	immediate = {
+		play_music_cue = mx_cue_touching_moment
+	}
+
+	option = {
+		name = jabir_ibn_hayyan.0015.a
+		add_prestige = 100
+		add_piety = 100
+		if = {
+			limit = {
+				var:wam_jabir_origin_story = flag:circe
+			}
+			add_character_modifier = {
+				modifier = wam_jabir_origin_story_circe
+			}
+		}
+		else_if = {
+			limit = {
+				var:wam_jabir_origin_story = flag:harun
+			}
+			add_character_modifier = {
+				modifier = wam_jabir_origin_story_harun
+			}
+		}
+		else_if = {
+			limit = {
+				var:wam_jabir_origin_story = flag:imhotep
+			}
+			add_character_modifier = {
+				modifier = wam_jabir_origin_story_imhotep
+			}
+		}		
+	}
+
+	after = {
+		if = {
+			limit = { has_variable = wam_jabir_origin_story }
+			remove_variable = wam_jabir_origin_story
+		}
+	}
+
 }
