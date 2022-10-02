@@ -18,7 +18,7 @@
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
 		history_id = wam_middle_east_01
 		position = { 1050 800 }
-		animation = disapproval
+		animation = personality_content
 	}
 
 	# Taliesin

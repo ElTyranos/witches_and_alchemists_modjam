@@ -857,7 +857,7 @@ wam_modjam_events.0011 = { # You have achieved what many thought impossible. The
 	option = {	# I am become He Who Lives Outside of Time.
 		name = wam_modjam_events.0011.a
 		custom_tooltip = wam_modjam_events.0011.a_tt
-		give_nickname = nickname_the_timeless
+		give_nickname = nick_the_timeless
 		add_prestige_level = 2
 		add_trait = immortal
 	}

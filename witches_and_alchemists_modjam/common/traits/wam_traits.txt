@@ -54,7 +54,7 @@ immortal = {
 }
 
 alchemist = {	
-	monthly_lifestyle_xp_gain_mult = 0.5
+	monthly_lifestyle_xp_gain_mult = 0.05
 	learning = 2
 
 	shown_in_ruler_designer = yes

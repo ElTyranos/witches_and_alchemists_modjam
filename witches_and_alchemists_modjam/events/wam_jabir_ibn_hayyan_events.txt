@@ -394,6 +394,12 @@ jabir_ibn_hayyan.0005 = {
 			limit = {
 				var:wam_jabir_corpus_type = flag:alchemy
 			}		
+			if = {
+				limit = {
+					NOT = { has_trait = alchemist }
+				}
+				add_trait = alchemist
+			}
 			add_character_modifier = {
 				modifier = wam_studying_jabiran_corpus_alchemy
 				years = 10

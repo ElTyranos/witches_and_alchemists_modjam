@@ -21,5 +21,10 @@ wam_1_on_action = {
 		# average weight should be 13.5%
 		5 = wam_eltyranos.0001 # Someone spotted a witch
 		5 = wam_alchemy.1
+		5 = wam_modjam_events.0001 #A friend takes interest #Erendriel
+		5 = wam_modjam_events.0003 #A desperate proposal #Erendriel
+		5 = wam_modjam_events.0004 #Surprise surprise! #Erendriel
+		5 = wam_modjam_events.0005 #It just works! #Erendriel
+		5 = wam_modjam_events.0009 #Behind Closed Doors #Erendriel
 	}
 }
