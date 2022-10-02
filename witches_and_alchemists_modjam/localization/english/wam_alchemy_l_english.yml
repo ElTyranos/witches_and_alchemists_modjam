@@ -46,7 +46,7 @@
  wam_ingr_bay_leaf_name:0 "Bay leaf"
 
  #TODO: describe effects/qualities that hint at recipes
- wam_ingr_mercury_desc:0 "This substance, also known as quicksilver, defies all conventions of both metals and liquids by being both. Many have considered this ingredient to hold the key to good health and even immortality."
+ wam_ingr_mercury_desc:0 "This substance, also known as quicksilver, defies all conventions of both metals and liquids by being both. Many have suspected this ingredient to hold the key to good health and even immortality."
  wam_ingr_realgar_desc:0 "A brittle crystal that's lethal when ingested. It burns brightly with a blue flame."
  wam_ingr_sulphur_desc:0 "Sulphur, or brimstone, is an odorous powder that is found near hot springs and fire-spewing mountains. It is highly flammable but also used in medicine and fumigation."
  wam_ingr_lead_desc:0 "A common soft, heavy metal, with a variety of uses in decoration and construction. By balancing its essences, its impurities could be removed allowing for the creation of gold."
@@ -65,3 +65,16 @@
 
  wam_recipe_philosophers_stone_desc:0 "Realgar, Mercury, Lead, when Boiled, yields the Philosopher's Stone"
  wam_recipe_panacea_desc:0 "Realgar, Mercury, Sulphur, when Ground, yields the Panacea"
+
+
+
+
+
+ #Events
+ wam_alchemy.1.t:0 "Exotic Concoctions"
+ wam_alchemy.1.desc:0 "As my skills and knowledge of the alchemic art advances, so does my awareness of the ingredients I am lacking. The item I keep coming across in my recent research is [Localize(JoinText(SCOPE.GetFlagName('ingredient'),'wam_ingr_','_name'))] - I wonder if acquiring it for myself would push me to new heights. I already know that one sample won't be enough; I need a supply chain."
+ wam_alchemy.1.a:0 "Send for every merchant in the realm!"
+ wam_alchemy.1.b:0 "I'll spread the word that [ROOT.Char.GetTitledFirstNameNicknamedNoTooltip] needs [Localize(JoinText(SCOPE.GetFlagName('ingredient'),'wam_ingr_','_name'))]!"
+ wam_alchemy.1.c:0 "I am good with what I have."
+
+ wam_learn_ingredient_tt:0 "[Localize(JoinText(SCOPE.GetFlagName('ingredient'),'wam_ingr_','_name'))] will become available to you."

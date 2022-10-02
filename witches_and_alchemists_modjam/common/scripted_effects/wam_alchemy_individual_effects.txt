@@ -7,7 +7,6 @@ wam_execute_effect_for_every_ingredient = {
 	$EFFECT$ = { INGREDIENT = realgar }
 	$EFFECT$ = { INGREDIENT = sulphur }
 	$EFFECT$ = { INGREDIENT = lead }
-
 	$EFFECT$ = { INGREDIENT = tin }
 	$EFFECT$ = { INGREDIENT = vinegar }
 	$EFFECT$ = { INGREDIENT = cinnabar }
@@ -20,7 +19,6 @@ wam_execute_effect_for_every_ingredient = {
 	$EFFECT$ = { INGREDIENT = saltpeter }
 	$EFFECT$ = { INGREDIENT = charcoal }
 	$EFFECT$ = { INGREDIENT = bay_leaf }
-
 }
 
 wam_execute_effect_for_scoped_ingredient_effect = {
@@ -30,7 +28,6 @@ wam_execute_effect_for_scoped_ingredient_effect = {
 		flag:realgar = { $EFFECT$ = { INGREDIENT = realgar } }
 		flag:sulphur = { $EFFECT$ = { INGREDIENT = sulphur } }
 		flag:lead = { $EFFECT$ = { INGREDIENT = lead } }
-		
 		flag:tin = { $EFFECT$ = { INGREDIENT = tin } }
 		flag:vinegar = { $EFFECT$ = { INGREDIENT = vinegar } }
 		flag:cinnabar = { $EFFECT$ = { INGREDIENT = cinnabar } }

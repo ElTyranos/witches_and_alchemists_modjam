@@ -21,9 +21,12 @@ wam_has_treatment_selected_trigger = {
 }
 
 wam_find_alchemy_story_trigger = {
-	any_owned_story = {
-		story_type = wam_alchemic_knowledge_story
-		save_temporary_scope_as = story
+	trigger_if = {
+		limit = { NOT = { exists = scope:story } }
+		any_owned_story = {
+			story_type = wam_alchemic_knowledge_story
+			save_temporary_scope_as = story
+		}
 	}
 }
 
@@ -36,4 +39,13 @@ wam_owns_ingredient_trigger = {
 
 wam_province_has_ingredient_trigger = {
 	wam_province_has_$INGREDIENT$_trigger = yes
+}
+
+
+wam_is_alchemist_trigger = {
+	always = yes
+}
+
+ingredient_is_unknown_trigger = {
+	var:wam_is_known_ingr_$INGREDIENT$ = no
 }

@@ -406,7 +406,11 @@
 									onrightclick = "[GetVariableSystem.Set('wam_ingredient_detail_view_open', 'yes')]"
 									onclick = "[GetScriptedGui('wam_select_ingredient_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('ingredient', MakeScopeFlag(Scope.GetFlagName)).End)]"
 									down = "[Or(Or(EqualTo_string(Scope.GetFlagName, GetPlayer.MakeScope.Var('wam_selected_ingredient_1').GetFlagName),EqualTo_string(Scope.GetFlagName, GetPlayer.MakeScope.Var('wam_selected_ingredient_2').GetFlagName)),EqualTo_string(Scope.GetFlagName, GetPlayer.MakeScope.Var('wam_selected_ingredient_3').GetFlagName))]"
-									#enabled = "[GreaterThan_CFixedPoint(GetPlayer.MakeScope.Var(Concatenate('wam_amount_owned_ingr_',Scope.GetFlagName)).GetValue, '(CFixedPoint)0')]"
+
+									background = {
+										using = Background_Area_Solid
+										visible = "[Not(GreaterThan_CFixedPoint(GetPlayer.MakeScope.Var(Concatenate('wam_amount_owned_ingr_',Scope.GetFlagName)).GetValue, '(CFixedPoint)0'))]"
+									}
 									tooltip = "wam_ingredient_tt"
 
 									icon = {
@@ -443,7 +447,7 @@
 										text = "[Localize(Concatenate('wam_ingr_',Concatenate(Scope.GetFlagName,'_name')))]"
 										parentanchor = top|left
 										position = { 8 0 }
-										max_width = 125
+										max_width = 110
 									}
 									text_single = {
 										text = "[GetPlayer.MakeScope.Var(Concatenate('wam_amount_owned_ingr_',Scope.GetFlagName)).GetValue]"
@@ -526,7 +530,7 @@
 				text_multi = {
 					parentanchor = top|right
 					position = { 0 0 }
-					size = { 400 75 }
+					size = { 400 95 }
 					margin_top = 10
 					margin_left = 10
 					margin_right = 10
@@ -534,7 +538,6 @@
 					text = "wam_ingredient_detail_window_desc"
 					align = top|hcenter
 					using = Font_Size_Medium
-					using = Font_Type_Flavor
 				}
 			}
 			widget = { size = { 10 5 } }

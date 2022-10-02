@@ -13,6 +13,7 @@ wam_dummy.1 = {
 		var:wam_selected_treatment = flag:philosophers_stone
 		var:wam_selected_treatment = flag:panacea
 		exists = var:outcome_artifact
+		exists = var:wam_poses_list
 	}
 	immediate = {
 		set_variable = { name = wam_selected_treatment value = flag:boiling }
@@ -20,5 +21,6 @@ wam_dummy.1 = {
 		set_variable = { name = wam_selected_treatment value = flag:baking }
 		set_variable = { name = wam_selected_treatment value = flag:dissolving }
 		set_variable = { name = outcome_artifact value = flag:dissolving }
+		set_variable = { name = FSB_is_loaded value = no }
 	}
 }
