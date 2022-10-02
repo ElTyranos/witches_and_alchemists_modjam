@@ -5,9 +5,3 @@ k_ynys_dywyll = {
 	
 	851.1.1 = { change_development_level = 2 }
 }
-
-
-
-
-
-
