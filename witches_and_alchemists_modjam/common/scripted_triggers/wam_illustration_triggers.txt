@@ -1,7 +1,6 @@
 ﻿has_graphical_goidelic_culture_group_trigger = {
-		OR = {
-			has_cultural_pillar = heritage_goidelic
-			has_cultural_pillar = heritage_brythonic
-		}
+	OR = {
+		has_cultural_pillar = heritage_goidelic
+		has_cultural_pillar = heritage_brythonic
 	}
 }
