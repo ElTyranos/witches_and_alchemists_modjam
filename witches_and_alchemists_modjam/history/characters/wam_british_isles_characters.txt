@@ -3,6 +3,7 @@ wam_british_isles_01 = {
 	name = "Taliesin"
 	religion = "pagan"
 	culture = "welsh"
+	dynasty = 101920
 	learning = 8
 	
 	trait = shrewd
