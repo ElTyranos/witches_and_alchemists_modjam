@@ -1,6 +1,9 @@
 ﻿wam_portrait_is_witch_trigger = {
 	AND = {
-		is_landed = no
+		OR = {
+			this = character:wam_british_isles_01
+			is_landed = no
+		}
 		OR = {
 			has_trait = witch
 			has_trait = druid
