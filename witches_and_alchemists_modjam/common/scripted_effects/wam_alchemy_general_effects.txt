@@ -287,6 +287,11 @@ wam_learn_recipe_effect = {
 wam_do_alchemy_effect = {
 	wam_find_or_create_alchemy_story_effect = yes
 	wam_execute_effect_for_every_recipe = { EFFECT = wam_try_recipe_with_selection_effect }
+	wam_consume_selected_ingredients_effect = yes
+	if = {
+		limit = { NOT = { exists = scope:experiment_succeeded } }
+		trigger_event = wam_modjam_events.0012
+	}
 }
 
 wam_try_recipe_with_selection_effect = {
@@ -297,6 +302,24 @@ wam_try_recipe_with_selection_effect = {
 		wam_execute_recipe_$RECIPE$_effect = yes
 		wam_learn_recipe_effect = { RECIPE = $RECIPE$ }
 		wam_move_alchemy_story_to_vars_effect = yes
+		save_scope_value_as = {
+			name = experiment_succeeded
+			value = yes
+		}
+	}
+}
+wam_consume_selected_ingredients_effect = {
+	if = {
+		limit = { exists = var:wam_selected_ingredient_1 }
+		wam_execute_effect_for_scoped_ingredient_effect = { SCOPED_INGREDIENT = var:wam_selected_ingredient_1 EFFECT = wam_remove_ingredient_effect }
+	}
+	if = {
+		limit = { exists = var:wam_selected_ingredient_2 }
+		wam_execute_effect_for_scoped_ingredient_effect = { SCOPED_INGREDIENT = var:wam_selected_ingredient_2 EFFECT = wam_remove_ingredient_effect }
+	}
+	if = {
+		limit = { exists = var:wam_selected_ingredient_3}
+		wam_execute_effect_for_scoped_ingredient_effect = { SCOPED_INGREDIENT = var:wam_selected_ingredient_3 EFFECT = wam_remove_ingredient_effect }
 	}
 }
 

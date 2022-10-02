@@ -886,19 +886,7 @@ wam_modjam_events.0012 = { # Catastrophe! Your feeble attempt at brewing the fab
 		character = root
 		animation = grief
 	}
-
-	trigger = { 
-		is_imprisoned = no
-		is_incapable = no
-		NOT = {
-			has_character_flag = failed_elixir_of_life
-		}
-	}
-
-	immediate = {	
-		add_character_flag = failed_elixir_of_life
-	}
-
+	
 	option = {	# I must keep trying.
 		name = wam_modjam_events.0012.a
 		random_list = {

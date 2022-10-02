@@ -57,9 +57,6 @@ wam_execute_effect_for_every_recipe = {
 }
 
 wam_execute_recipe_elixir_of_life_effect = {
-	wam_remove_ingredient_effect = { INGREDIENT = mercury }
-	wam_remove_ingredient_effect = { INGREDIENT = vitriol }
-	wam_remove_ingredient_effect = { INGREDIENT = small_mammal }
 	wam_outcome_elixir_of_life_effect = yes
 }
 
