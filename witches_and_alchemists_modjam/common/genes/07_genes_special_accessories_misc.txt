@@ -802,6 +802,19 @@ special_genes = {
 				boy = male
 				girl = female
 			}
+			
+			wam_bonfire = {
+				index = 65
+				male = {
+					1 = wam_bonfire_01
+				}
+				female = {
+					1 = wam_bonfire_01
+				}
+				boy = male
+				girl = female
+			}
+			
 		}
 		
 

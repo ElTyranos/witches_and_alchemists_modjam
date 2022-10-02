@@ -421,3 +421,209 @@ wam_grenade = {
     female = male
     girl = male
 }
+
+wam_bonfire = {
+	male = {
+		default = { head = "emotion_sadness_entry" torso = "emotion_sadness_entry" }
+
+		emotion_sadness_hunchbacked = {
+			animation = { head = "idle_entry" torso = "idle_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 110
+					portrait_has_trait_trigger = { TRAIT = hunchbacked }
+				}
+			}
+		}
+
+		emotion_sadness_infant = {
+			animation = { head = "idle" torso = "idleInfant_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					scope:age <= 5
+				}
+			}
+		}
+
+		emotion_sadness_child = {
+			animation = { head = "idle_entry" torso = "idle_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					always = no #scope:age <= 9
+
+				}
+			}
+		}
+
+		emotion_sadness = {
+			animation = { head = "emotion_sadness_entry" torso = "emotion_sadness_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						scope:current_weight < 55
+						NOT = { portrait_has_trait_trigger = { TRAIT = dwarf } }
+						NOT = { portrait_has_trait_trigger = { TRAIT = pregnant } }
+                        
+					}
+				}
+			}
+
+			portrait_modifier = {
+				animations_props = wam_bonfire_prop
+				animations = emotion_sadness_decal
+			}
+		}
+
+		emotion_sadness_fat = {
+			animation = { head = "emotion_sadness_entry" torso = "emotion_sadnessFat_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						scope:current_weight > 55
+						NOT = { portrait_has_trait_trigger = { TRAIT = dwarf } }
+						NOT = { portrait_has_trait_trigger = { TRAIT = pregnant } }
+                        
+					}					
+				}
+			}
+
+			portrait_modifier = {
+				animations_props = wam_bonfire_prop
+				animations = emotion_sadness_decal
+			}
+		}
+
+		emotion_sadness_dwarf = {
+			animation = { head = "emotion_sadness_entry" torso = "emotion_sadnessFat_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						scope:current_weight < 65
+						portrait_has_trait_trigger = { TRAIT = dwarf }
+						NOT = { portrait_has_trait_trigger = { TRAIT = pregnant } }                        
+					}					
+				}
+			}
+
+			portrait_modifier = {
+				animations_props = wam_bonfire_prop
+				animations = emotion_sadness_decal
+			}
+		}
+
+		emotion_sadness_fat_dwarf = {
+			animation = { head = "emotion_sadness_entry" torso = "emotion_sadnessFatDwarf_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						scope:current_weight > 65
+						portrait_has_trait_trigger = { TRAIT = dwarf }
+						NOT = { portrait_has_trait_trigger = { TRAIT = pregnant } }                        
+					}					
+				}
+			}
+
+			portrait_modifier = {
+				animations_props = wam_bonfire_prop
+				animations = emotion_sadness_decal
+			}
+		}
+
+		emotion_sadness_pregnant = {
+			animation = { head = "misc_pregnant_entry" torso = "misc_pregnant_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						scope:current_weight < 45
+						portrait_has_trait_trigger = { TRAIT = pregnant }
+						NOT = { portrait_has_trait_trigger = { TRAIT = dwarf } }
+					}					
+				}
+			}
+
+			portrait_modifier = {
+				animations_props = wam_bonfire_prop
+				animations = emotion_happy_decal
+			}
+		}
+
+		emotion_sadness_pregnant_dwarf = {
+			animation = { head = "misc_pregnant_entry" torso = "misc_pregnantFat_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						scope:current_weight < 60
+						portrait_has_trait_trigger = { TRAIT = pregnant }
+						portrait_has_trait_trigger = { TRAIT = dwarf }
+					}					
+				}
+			}
+
+			portrait_modifier = {
+				animations_props = wam_bonfire_prop
+				animations = emotion_happy_decal
+			}
+		}
+
+		emotion_sadness_pregnant_fat_dwarf = {
+			animation = { head = "misc_pregnant_entry" torso = "misc_pregnantFatDwarf_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						scope:current_weight > 60
+						portrait_has_trait_trigger = { TRAIT = pregnant }
+						portrait_has_trait_trigger = { TRAIT = dwarf }
+					}					
+				}
+			}
+
+			portrait_modifier = {
+				animations_props = wam_bonfire_prop
+				animations = emotion_happy_decal
+			}
+		}
+	}
+
+	boy = male
+	female = male
+	girl = male	
+}

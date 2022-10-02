@@ -36,6 +36,17 @@
 		}
 	}
 	
+	wam_bonfire_prop = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = props
+				template = wam_bonfire
+				value = 1.0
+			}
+		}
+	}
+	
 	##
 
 	chancellor_fp2_prop = {
