@@ -1,34 +1,24 @@
 widget = {
 	name = "wam_alchemy_button"
 	datacontext = "[GetVariableSystem]"
-	visible = "[GetScriptedGui('wam_alchemy_button_should_show_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+	visible = "[And(And( Not( IsPauseMenuShown ), And(Not(IsRightWindowOpen), IsDefaultGUIMode)),GetScriptedGui('wam_alchemy_button_should_show_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End))]"
 	parentanchor = top|right
 	allow_outside = yes
+	position = {
+		-90 40
+	}
 	layer = top
-	using = Window_Size_MainTab
 
-	state = {
-		name = _show
-		using = Animation_FadeIn_Quick
-		using = Window_Position_MainTab
-	}
-
-	state = {
-		name = _hide
-		using = Animation_FadeOut_Quick
-		using = Window_Position_MainTab_Hide
-	}
-
-	button_standard = {
+	button_round = {
 		name = "open_wam_alchemy"
-		size = { 40 40 }
-		position = { 50 53 }
+		size = { 35 35 }
+		position = { 52 53 }
 		using = tooltip_nw
 
 		button_icon_highlight = {
 			parentanchor = center
-			size = { 25 25 }
-			texture = "gfx/interface/icons/culture_pillars/language.dds"
+			size = { 23 23 }
+			texture = "gfx/interface/icons/flat_icons/alchemy_window_icon.dds"
 		}
 
 		onclick = "[GetVariableSystem.Set('wam_alchemy_window_open', 'yes')]"

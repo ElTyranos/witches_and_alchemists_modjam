@@ -13,6 +13,7 @@ wam_british_isles_01 = {
 	trait = education_learning_3
 	trait = patient
 	trait = reclusive
+	trait = alchemist
 	
 	806.4.18 = {
 		birth = yes
