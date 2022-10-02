@@ -150,7 +150,12 @@ castle_01 = {
 	### CELTIC ###
 	asset = {
 		type = pdxmesh
-		name = "building_celtic_hillfort_01_mesh"
+		names = {
+			"building_celtic_hillfort_01_mesh"
+			"building_celtic_hillfort_02_mesh"
+			"building_celtic_hillfort_03_mesh"
+			"building_celtic_hillfort_04_mesh"
+		}
 		illustration = @holding_illustration_western
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle" soundparameter = { "Tier" = 0 } }
 		graphical_cultures = { celtic_building_gfx }
