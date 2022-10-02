@@ -69,11 +69,11 @@
  wam_modjam_events.0010.a_tt:0 "You won't be missed..."
 
  wam_modjam_events.0011.t:0 "The Elixir of Life"
- wam_modjam_events.0011.desc:0 "You have achieved what many thought impossible. The fabled exilir of life, the secret to immortality, lies in your hands, ready to be drank."
+ wam_modjam_events.0011.desc:0 "You have achieved what many thought impossible. The fabled elixir of life, the secret to immortality, lies in your hands, ready to be drank."
  wam_modjam_events.0011.a:0 "I am become He Who Lives Outside of Time."
  wam_modjam_events.0011.a_tt:0 "Years become meaningless, like leaves in the wind..."
  wam_modjam_events.0011.b:0 "This is heresy of the highest order..."
- wam_modjam_events.0011.b_tt:0 "Man should not play God..."
+ wam_modjam_events.0011.b_tt:0 "Man should not play [GetPlayer.GetFaith.CreatorName]..."
 
  wam_modjam_events.0012.t:0 "The Elixir of Life"
  wam_modjam_events.0012.desc:0 "Catastrophe! Your feeble attempt at brewing the fabled Elixir of Life evaporates after a few seconds. Your cauldron lies in ruins, the room filled with strange, colorful smoke."
@@ -81,11 +81,9 @@
  wam_modjam_events.0012.b:0 "I have failed... There is no point in continuing..."
 
  #Immortal trait
- 
  trait_immortal:0 "Immortal"
  immortal_trait_desc:0 "This character has, through mysterious methods, achieved Everlasting Life"
  
  #Alchemist trait
- 
  trait_alchemist:0 "Alchemist"
- alchemist_trait_desc:0 "This character has acquired knowledge in the brewing of unfusions, potions and elixirs of otherworldly nature."
+ alchemist_trait_desc:0 "This character has acquired knowledge in the brewing of infusions, potions and elixirs of otherworldly nature."

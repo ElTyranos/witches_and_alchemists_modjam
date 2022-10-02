@@ -53,43 +53,14 @@ wam_execute_effect_for_every_treatment = {
 
 ### RECIPES ###
 wam_execute_effect_for_every_recipe = {
-	$EFFECT$ = { RECIPE = philosophers_stone }
-	$EFFECT$ = { RECIPE = panacea }
+	$EFFECT$ = { RECIPE = elixir_of_life }
 }
 
-wam_execute_recipe_philosophers_stone_effect = {
-	wam_remove_ingredient_effect = { INGREDIENT = realgar }
-	wam_remove_ingredient_effect = { INGREDIENT = mercury }
-	wam_remove_ingredient_effect = { INGREDIENT = lead }
-	wam_create_artifact_effect = { ARTIFACT = philosophers_stone }
-}
-
-wam_execute_recipe_panacea_effect = {
-	wam_remove_ingredient_effect = { INGREDIENT = realgar }
-	wam_remove_ingredient_effect = { INGREDIENT = mercury }
-	wam_remove_ingredient_effect = { INGREDIENT = sulphur }
-	wam_create_artifact_effect = { ARTIFACT = panacea }
+wam_execute_recipe_elixir_of_life_effect = {
+	wam_outcome_elixir_of_life_effect = yes
 }
 
 ### OUTCOMES ###
-wam_create_artifact_philosophers_stone_effect = {
-	save_scope_as = owner
-	create_artifact_regalia_effect = {
-		OWNER = scope:owner
-		SMITH = scope:owner
-	}
-	scope:newly_created_artifact = {
-		save_scope_as = artifact
-	}
-}
-
-wam_create_artifact_panacea_effect = {
-	save_scope_as = owner
-	create_artifact_brooch_effect = {
-		OWNER = scope:owner
-		SMITH = scope:owner
-	}
-	scope:newly_created_artifact = {
-		save_scope_as = artifact
-	}
+wam_outcome_elixir_of_life_effect = {
+	trigger_event = wam_modjam_events.0011
 }

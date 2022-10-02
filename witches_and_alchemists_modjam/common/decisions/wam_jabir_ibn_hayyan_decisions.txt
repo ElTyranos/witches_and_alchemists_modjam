@@ -76,6 +76,7 @@ wam_jabir_ibn_hayyan_other_study_decision = {
 			has_trait = scholar
 			has_trait = education_learning_3
 			has_trait = education_learning_4
+			has_trait = alchemist
 		}
 	}
 	
@@ -85,6 +86,7 @@ wam_jabir_ibn_hayyan_other_study_decision = {
 			has_trait = scholar
 			has_trait = education_learning_3
 			has_trait = education_learning_4
+			has_trait = alchemist
 		}
 	}
 	

@@ -11,6 +11,7 @@ wam_middle_east_01 = {
 	trait = calm
 	trait = diligent
 	trait = content
+	trait = alchemist
 	721.8.8 = {
 		birth = yes
 		set_immortal_age = 25
@@ -32,6 +33,7 @@ wam_middle_east_02 = {
 	trait = diligent
 	trait = content
 	trait = ill
+	trait = alchemist
 	721.8.8 = {
 		birth = yes
 	}

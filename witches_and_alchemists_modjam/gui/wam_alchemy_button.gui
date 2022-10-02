@@ -1,7 +1,7 @@
 widget = {
 	name = "wam_alchemy_button"
 	datacontext = "[GetVariableSystem]"
-	#visible = "[IsGameViewOpen('court_window')]"
+	visible = "[GetScriptedGui('wam_alchemy_button_should_show_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 	parentanchor = top|right
 	allow_outside = yes
 	layer = top

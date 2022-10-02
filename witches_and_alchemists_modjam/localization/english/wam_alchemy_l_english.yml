@@ -51,8 +51,8 @@
  wam_ingr_sulphur_desc:0 "Sulphur, or brimstone, is an odorous powder that is found near hot springs and fire-spewing mountains. It is highly flammable but also used in medicine and fumigation."
  wam_ingr_lead_desc:0 "A common soft, heavy metal, with a variety of uses in decoration and construction. By balancing its essences, its impurities could be removed allowing for the creation of gold."
  wam_ingr_tin_desc:0 "Easily confused with lead by the lesser alchemist, tin is another metal associated with abundance, health, and attracting what is desired."
- wam_ingr_vinegar_desc:0 "An acidic substance made from wine, adding taste to food and EFFECT to alchemy."
- wam_ingr_cinnabar_desc:0 "A red, earthtly ore, found in veins near metals and mercury. EFFECT DESC"
+ wam_ingr_vinegar_desc:0 "An acidic substance made from wine, adding taste to food and spice to alchemy."
+ wam_ingr_cinnabar_desc:0 "A red, earthtly ore, found in veins near metals and mercury."
  wam_ingr_aqua_vitae_desc:0 "A very concentrated form of wine, with reactions to the skin, and a strong effect on anyone unfortunate enough to drink it."
  wam_ingr_vitriol_desc:0 "A glass-like powder that is found after impure groundwater evaporates. It comes in different colours, but all of them are mighty corrosive to their containers."
  wam_ingr_large_mammal_desc:0 "This mooing creature is taking up a lot of space."
@@ -63,10 +63,7 @@
  wam_ingr_charcoal_desc:0 "The product of slowly partially burning wood; used as a fuel or for various medicinal purposes."
  wam_ingr_bay_leaf_desc:0 "An herb that makes strong flavours milder, and as it does with high temperaments."
 
- wam_recipe_philosophers_stone_desc:0 "Realgar, Mercury, Lead, when Boiled, yields the Philosopher's Stone"
- wam_recipe_panacea_desc:0 "Realgar, Mercury, Sulphur, when Ground, yields the Panacea"
-
-
+ wam_recipe_elixir_of_life_desc:0 "Mercury, Vitriol, and a Small Mammal, when Boiled together, yields the Elixir of Life"
 
 
 

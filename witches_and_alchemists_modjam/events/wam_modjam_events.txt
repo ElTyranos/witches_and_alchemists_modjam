@@ -854,18 +854,6 @@ wam_modjam_events.0011 = { # You have achieved what many thought impossible. The
 		animation = wam_cauldron
 	}
 
-	trigger = { 
-		is_imprisoned = no
-		is_incapable = no
-		NOT = {
-			has_character_flag = elixir_of_life
-		}
-	}
-
-	immediate = {	
-		add_character_flag = elixir_of_life
-	}
-
 	option = {	# I am become He Who Lives Outside of Time.
 		name = wam_modjam_events.0011.a
 		custom_tooltip = wam_modjam_events.0011.a_tt
@@ -898,19 +886,7 @@ wam_modjam_events.0012 = { # Catastrophe! Your feeble attempt at brewing the fab
 		character = root
 		animation = grief
 	}
-
-	trigger = { 
-		is_imprisoned = no
-		is_incapable = no
-		NOT = {
-			has_character_flag = failed_elixir_of_life
-		}
-	}
-
-	immediate = {	
-		add_character_flag = failed_elixir_of_life
-	}
-
+	
 	option = {	# I must keep trying.
 		name = wam_modjam_events.0012.a
 		random_list = {

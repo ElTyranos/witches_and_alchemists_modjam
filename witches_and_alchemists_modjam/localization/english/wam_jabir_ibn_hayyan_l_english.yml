@@ -35,7 +35,7 @@
  wam_jabir_ibn_hayyan_other_study_decision:0 "$wam_jabir_ibn_hayyan_self_study_decision$"
  wam_jabir_ibn_hayyan_other_study_decision_tooltip:0 "$wam_jabir_ibn_hayyan_self_study_decision_tooltip$"
  wam_jabir_ibn_hayyan_other_study_decision_desc:0 "I have heard of a great alchemist and scholar by the name of Jabir ibn Hayyan, who teaches a theory called the #EMP Science of Balance#!, among other things. Despite his mysterious origins, and rumors about his immortality, perhaps I find a way to study his writings on many intellectual topics, such as alchemy."
- wam_jabir_ibn_hayyan_other_study_decision_effect_tooltip_1:0 "You can choose between gaining various #P positive#! [character_modifiers|E] that increase your [skills|E] or provide bonuses related to alchemy"
+ wam_jabir_ibn_hayyan_other_study_decision_effect_tooltip_1:0 "You can choose between gaining various #P positive#! [character_modifiers|E] that increase your [skills|E] or provide bonuses related to alchemy (or even become an [GetTrait('alchemist').GetName( GetPlayer )] yourself!)"
  wam_jabir_ibn_hayyan_other_study_decision_effect_tooltip_2:0 "The chances of gaining these advantages depend on your [learning_skill|E] and how much [stress|E] you are willing to gain"
  wam_jabir_ibn_hayyan_other_study_decision_confirm:0 "Let's learn about this Science of Balance!"
 
@@ -43,7 +43,7 @@
  jabir_ibn_hayyan.0001.t:0 "The Science of Balance"
  jabir_ibn_hayyan.0001.desc:0 "I have spent many years trying to better understand the world, developing and testing theories, contemplating the cosmos, and more.However, sometimes, all my work, projects, and the realities of life get in the way. I want to review the knowledge I've gained over the years, and reflect on the #italic Science of Balance#! that underpins my whole philosophical outlook.\n\nNow, what topic should I focus on reviewing?"
  jabir_ibn_hayyan.0001.a:0 "Alchemy"
- jabir_ibn_hayyan.0001.a.tooltip:0 "Study the texts of the #V Jabirian Corpus#! that focus on alchemy, such as the #italic Great Book of Mercy#! or the #italic Book of Balances#! along with writings from other scholars."
+ jabir_ibn_hayyan.0001.a.tooltip:0 "Study the texts of the #V Jabirian Corpus#! that focus on alchemy, such as the #italic Great Book of Mercy#! or the #italic Book of Balances#! along with writings from other scholars. If you aren't one already, you might even become an [GetTrait('alchemist').GetName( GetPlayer )]!"
  jabir_ibn_hayyan.0001.b:0 "Philosophy"
  jabir_ibn_hayyan.0001.b.tooltip:0 "Study the texts of the #V Jabirian Corpus#! that focus on logic, mataphysics, and other aspects of philosophy, such as those about Aristotle, along with writings from other scholars."
  jabir_ibn_hayyan.0001.c:0 "Strategems"
