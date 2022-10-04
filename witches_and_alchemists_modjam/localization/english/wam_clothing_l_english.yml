@@ -20,10 +20,3 @@
  PORTRAIT_MODIFIER_custom_headgear_male_headgear_fantasy_wam_enchanter_hat_01:0 "@wam_icon! Horned Hat"
  PORTRAIT_MODIFIER_custom_headgear_female_headgear_fantasy_wam_enchanter_hat_01:0 "$PORTRAIT_MODIFIER_custom_headgear_male_headgear_fantasy_wam_enchanter_hat_01$"
  
- wam_poses_list_name:0 "Witches and Alchemists"
- wam_potion_name:0 "Potion"
- wam_grenade_name:0 "Holy Handgrenade"
- wam_cauldron_name:0 "Cauldron"
- wam_bonfire_name:0 "Bonfire"
- wam_broom_name:0 "Broom"
- 
